@@ -71,3 +71,116 @@ button:focus-visible {
 
 
 /* Eventually this will be used as the base for styling */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Roboto&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000235;
+  color: whitesmoke;
+}
+
+
+
+/* NavBar.jsx */
+nav {
+  text-align: center;
+  margin: 15px auto 0px auto;
+  padding: 10px 0px;
+}
+
+nav > ul {
+  display: inline;
+}
+
+nav > ul > li {
+  font-family: Comic Neue;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+nav > ul > li:first-child {
+  font-weight: 800;
+  color: #FFF;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-right: 15em;
+}
+
+
+/* Navbar rules for mobile screens */
+.hamburger-icon {
+  display: none; /* Initially hidden on larger screens */
+  cursor: pointer;
+}
+
+/* Media query rules for navbar for anything too small to get the regular navbar */
+@media screen and (max-width: 492px) {
+  .hamburger-icon {
+    display: block;
+  }
+}
+
+
+
+
+
+
+/* HomeIntroCard.jsx */
+.introcard > .name {
+  /* padding: 0px; */
+  margin: 15px 0px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  line-height: 1.2em;
+}
+
+.introcard-text {
+  color: #FFF;
+  font-family: Fira Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.introcard {
+  /* padding: 50px; */
+  padding: 50px 50px 0px 50px;
+  width: 800px;
+  height: 480px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 2px solid #6E6684;
+  background: #1B0E41;
+  margin: 50px auto;
+}
+
+.introcard > ul > li {
+  color: #FFF;
+  font-family: Fira Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 2em;
+  display: inline-block;
+}
+
+.introcard-spaced {
+  margin: 25px 0px 15px 0px;
+}

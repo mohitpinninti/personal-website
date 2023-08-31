@@ -6,8 +6,8 @@ const HomePage = () => {
   return (
     <>
       <HomeIntroCard />
-      <BioCard />
-      <ExperienceCard />
+      {/* <BioCard /> */}
+      {/* <ExperienceCard /> */}
     </>
   );
 };

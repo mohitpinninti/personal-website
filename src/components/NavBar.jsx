@@ -1,14 +1,17 @@
+import '../index.css'
+
 const NavBar = () => {
   return (
-    <>
-      <h1>Mohit Pinninti</h1>
+    <nav>
+      {/* <h1 className='navname'>Mohit Pinninti</h1> */}
       <ul>
+        <li>Mohit Pinninti</li>
         <li>Home</li>
         <li>About</li>
         <li>Blog</li>
         <li>Contact</li>
       </ul>
-    </>
+    </nav>
   );
 };
 
