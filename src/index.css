@@ -168,6 +168,27 @@ nav > h1 {
   /* margin-right: 15em; */
 }
 
+.navname {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #FFF;
+  text-decoration-color: none;
+  padding: 5px 10px;
+}
+
+.navlink:hover {
+  /* color: turquoise; */
+  /* border-style: solid; */
+  outline: 3px solid #FFF;
+  border-radius: 4px;
+  color: #1B0E41;
+  background-color: #FFF;
+  font-weight: 800;
+}
 
 
 /* Navbar rules for mobile screens */
