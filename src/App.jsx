@@ -5,16 +5,20 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
+import Testing from "./pages/Testing";
+import WipAlert from "./components/WipAlert";
 
 function App() {
   return (
     <BrowserRouter>
+      {/* <WipAlert /> */}
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/testing" element={<Testing />} />
       </Routes>
     </BrowserRouter>
   );
