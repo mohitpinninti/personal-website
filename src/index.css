@@ -93,14 +93,57 @@ body {
 .wipAlert {
   display: flex;
   align-items: center;
-  max-width: 1000px;
+  justify-content: center;
+  /* max-width: 1000px; */
   position: sticky;
-  background-color: ffbc42;
+  background-color: #ffbd42;
+  /* font-family: Comic Neue; */
+  /* font-family: Roboto; */
+  font-family: Fira Mono;
+  /* font-family: 'Lucida Sans Regular'; */
+  /* font-weight: 100; */
+  font-size: 0.5em;
+  /* font-weight: 800; */
+  /* padding: 10px; */
+  /* gap: 20px; */
+  text-align: center;
 }
 
-.wipdisplay {
-  visibility: visible;
+.wipAlert > h1 > span {
+  font-style: italic;
+  font-size: 0.85em; 
 }
+
+.wipAlertButton {
+  padding: 8px 18px;
+  /* margin: 50px 0px; */
+  /* margin: 0px 50px; */
+  border-radius: 8px;
+  margin: 10px 20px;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+
+  /* background-color: #000235; */
+  /* color: #ffbc42; */
+  border-color: white;
+  background-color: #ff9000;
+  color: white;
+  font-weight: 600;
+  font-family: Comic Neue;
+  font-size: 1.8em;
+}
+
+.wipAlertButton:hover {
+  background-color: #ff8000;
+}
+
+.wipAlertButton:active {
+  background-color: #ff7000;
+}
+
+
+
 
 /* .wipAlert {
   display: flex;
@@ -178,16 +221,18 @@ nav > h1 {
   color: #FFF;
   text-decoration-color: none;
   padding: 5px 10px;
+  /* opacity: 90%; */
 }
 
 .navlink:hover {
   /* color: turquoise; */
   /* border-style: solid; */
-  outline: 3px solid #FFF;
+  outline: 4px solid #FFF;
   border-radius: 4px;
   color: #1B0E41;
   background-color: #FFF;
   font-weight: 800;
+  /* background-color: rgba(255, 255, 255, 100%); */
 }
 
 
@@ -271,4 +316,19 @@ nav > h1 {
 
 .introcard-spaced {
   margin: 25px 0px 15px 0px;
+}
+
+/* AboutPage.jsx */
+.aboutPage {
+  text-align: center;
+}
+
+/* BlogPage.jsx */
+.blogPage {
+  text-align: center;
+}
+
+/* ContactPage.jsx */
+.contactPage {
+  text-align: center;
 }

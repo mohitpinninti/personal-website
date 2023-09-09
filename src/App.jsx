@@ -11,7 +11,7 @@ import WipAlert from "./components/WipAlert";
 function App() {
   return (
     <BrowserRouter>
-      {/* <WipAlert /> */}
+      <WipAlert />
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />

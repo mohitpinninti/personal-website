@@ -2,21 +2,21 @@ import { useState } from "react";
 
 const WipAlert = () => {
 
-    const [visibility, setVisibility] = useState("visible");
-
-    const changeStyle = () => {
-        console.log("button clicked");
-        setVisibility("hidden");
-    }
+    const [isVisible, setIsVisible] = useState(true);
 
     return (
-        <div className={{visibility: visibility}}>
-            <h1>Note: This website is a work in progress</h1>
-            {/* <button onClick={changeStyle}>Okay</button> */}
-            <button onClick={changeStyle}>Okay</button>
+        <div>
+            {isVisible && <div className="wipAlert">
+            <h1>Note: This website is a work in progress. <br /> <span>Much of what you see is unfinished!</span></h1>
+            <button className="wipAlertButton" onClick={() => setIsVisible(false)}>Dismiss</button>
+        </div>}
         </div>
+
+        
     );
 }
+
+
 
 
 
