@@ -5,7 +5,7 @@ const ContactPage = () => {
       <p>Welcome to the contact page!</p>
       <br />
       <i>Please note - this page is still a work in progress</i>
-    </div>
+    </div>  
   );
 };
 

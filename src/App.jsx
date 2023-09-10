@@ -7,6 +7,7 @@ import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
 import Testing from "./pages/Testing";
 import WipAlert from "./components/WipAlert";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/testing" element={<Testing />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

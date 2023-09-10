@@ -296,6 +296,7 @@ nav > h1 {
   border: 2px solid #6E6684;
   background: #1B0E41;
   margin: 50px auto;
+  
   background-image: url("\\assets\\ReadyPlayerMe-Avatar_right_facing.png");
   background-position-x: 240%;
   background-position-y: 30%;
@@ -321,6 +322,43 @@ nav > h1 {
 /* AboutPage.jsx */
 .aboutPage {
   text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+/* BioCard.jsx */
+.biocard {
+  max-width: 600px;
+  margin: auto;
+  /* margin: 0px; */
+  /* text-align: center; */
+  /* text-align: center; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.biocard-heading {
+  font-size: 1.1em;
+  font-family: Fira Mono;
+  font-weight: 800;
+  text-decoration: underline;
+  margin: 0px auto 6px auto;
+  /* padding: 10px auto 5x auto; */
+}
+
+.biocard-heading-1 {
+  font-size: 1.1em;
+  font-family: Fira Mono;
+  font-weight: 800;
+  /* text-decoration: underline; */
+}
+
+hr {
+  width: 80%;
+  /* margin: auto 3px; */
+  margin: 0px auto 6px auto;
+  /* padding: 0px 0px 3px 0px; */
 }
 
 /* BlogPage.jsx */
@@ -331,4 +369,24 @@ nav > h1 {
 /* ContactPage.jsx */
 .contactPage {
   text-align: center;
+}
+
+
+/* Footer.jsx */
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  align-items: center;
+}
+
+.footer > p {
+  max-width: 33vw;
+  color: #6e658a;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
