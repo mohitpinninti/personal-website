@@ -378,6 +378,7 @@ hr {
   justify-content: center;
   gap: 10vw;
   align-items: center;
+  margin: 20px;
 }
 
 .footer > p {
@@ -389,4 +390,12 @@ hr {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.footerLink:hover {
+  color: #dcd0ff;
+}
+
+.footerLink:active {
+  color: #FFF;
 }
