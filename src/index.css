@@ -338,16 +338,15 @@ nav > h1 {
   /* justify-content: center; */
 }
 
-.biocard-heading {
+/* .biocard-heading {
   font-size: 1.1em;
   font-family: Fira Mono;
   font-weight: 800;
   text-decoration: underline;
   margin: 0px auto 6px auto;
-  /* padding: 10px auto 5x auto; */
-}
+} */
 
-.biocard-heading-1 {
+.biocard-heading {
   font-size: 1.1em;
   font-family: Fira Mono;
   font-weight: 800;
@@ -392,10 +391,10 @@ hr {
   gap: 20px;
 }
 
-.footerLink:hover {
+.footer-link:hover {
   color: #dcd0ff;
 }
 
-.footerLink:active {
+.footer-link:active {
   color: #FFF;
 }
