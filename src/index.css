@@ -94,18 +94,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* max-width: 1000px; */
   position: sticky;
   background-color: #ffbd42;
-  /* font-family: Comic Neue; */
-  /* font-family: Roboto; */
   font-family: Fira Mono;
-  /* font-family: 'Lucida Sans Regular'; */
-  /* font-weight: 100; */
   font-size: 0.5em;
-  /* font-weight: 800; */
-  /* padding: 10px; */
-  /* gap: 20px; */
   text-align: center;
 }
 
@@ -338,6 +330,10 @@ nav > h1 {
   /* justify-content: center; */
 }
 
+.biocard-section-spacing {
+  margin-bottom: 80px;
+}
+
 /* .biocard-heading {
   font-size: 1.1em;
   font-family: Fira Mono;
@@ -353,6 +349,69 @@ nav > h1 {
   /* text-decoration: underline; */
 }
 
+.biocard-careerPage-note {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* max-width: 1000px; */
+  position: sticky;
+  /* background-color: #ff31a2; */
+  background-color: #6c0359;
+  padding: 20px 50px;
+  margin: 10px 70px;
+  /* border: 1px solid transparent; */
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  /* padding: 100px; */
+  /* margin: 50px; */
+  /* background-image:radial-gradient(#ff1495, #000235); */
+  /* opacity: 90%; */
+  /* background-op */
+  /* font-family: Comic Neue; */
+  /* font-family: Roboto; */
+  font-family: Fira Mono;
+  /* font-family: ; */
+  /* font-family: 'Lucida Sans Regular'; */
+  font-weight: 800;
+  letter-spacing: -1px;
+  /* font-weight: 100; */
+  font-size: 1em;
+  /* font-weight: 800; */
+  /* padding: 10px; */
+  /* gap: 20px; */
+  text-align: center;
+}
+
+.biocard-careerPageButton {
+  padding: 8px 18px;
+  /* margin: 50px 0px; */
+  /* margin: 0px 50px; */
+  border-radius: 8px;
+  margin: 10px 20px;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+
+  /* background-color: #000235; */
+  /* color: #ffbc42; */
+  border-color: white;
+  /* background-color: #ff008c; */
+  background-color: #6c0359;
+  color: white;
+  font-weight: 600;
+  font-family: Comic Neue;
+  font-size: 1.8em;
+}
+
+.biocard-careerPageButton:hover {
+  background-color: #ff8000;
+}
+
+.biocard-careerPageButton:active {
+  background-color: #ff7000;
+}
+
 hr {
   width: 80%;
   /* margin: auto 3px; */
@@ -363,6 +422,44 @@ hr {
 /* BlogPage.jsx */
 .blogPage {
   text-align: center;
+}
+
+/* CareerPage.jsx */
+.careerPage {
+  text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+/* CareerCard.jsx */
+.careercard {
+  max-width: 600px;
+  margin: auto;
+  /* margin: 0px; */
+  /* text-align: center; */
+  /* text-align: center; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.careercard-section-spacing {
+  margin-bottom: 80px;
+}
+
+/* .biocard-heading {
+  font-size: 1.1em;
+  font-family: Fira Mono;
+  font-weight: 800;
+  text-decoration: underline;
+  margin: 0px auto 6px auto;
+} */
+
+.careercard-heading {
+  font-size: 1.1em;
+  font-family: Fira Mono;
+  font-weight: 800;
+  /* text-decoration: underline; */
 }
 
 /* ContactPage.jsx */
@@ -397,4 +494,37 @@ hr {
 
 .footer-link:active {
   color: #FFF;
+}
+
+.recentUpdates {
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+  margin: auto;
+  width: 50%;
+}
+
+.recentUpdates-items {
+  list-style-type: none;
+  /* list-style-position: inside; */
+}
+
+.recentUpdates-items-date {
+  /* font-size: 1em; */
+  font-family: Fira Mono;
+  /* font-family: Comic Neue; */
+
+  font-size: 1.1em;
+  font-weight: 800;
+  list-style-type: none;
+}
+
+.recentUpdates-items-event {
+  font-family: Comic Neue;
+  font-weight: bold;
+  color: #a5a5a5;
+
+  list-style-position: inside;
+  list-style-type: none;
+  font-size: 0.95em;
 }
