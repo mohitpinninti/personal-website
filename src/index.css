@@ -287,7 +287,7 @@ nav > h1 {
   border-radius: 15px;
   border: 2px solid #6E6684;
   background: #1B0E41;
-  margin: 50px auto;
+  margin: 50px auto 25px;
   
   background-image: url("\\assets\\ReadyPlayerMe-Avatar_right_facing.png");
   background-position-x: 240%;
@@ -416,7 +416,6 @@ hr {
   width: 80%;
   /* margin: auto 3px; */
   margin: 0px auto 6px auto;
-  /* padding: 0px 0px 3px 0px; */
 }
 
 /* BlogPage.jsx */
@@ -435,6 +434,8 @@ hr {
 .careercard {
   max-width: 600px;
   margin: auto;
+  /* font-family: Comic Neue; */
+  /* font-family: Fira Mono; */
   /* margin: 0px; */
   /* text-align: center; */
   /* text-align: center; */
@@ -444,7 +445,7 @@ hr {
 }
 
 .careercard-section-spacing {
-  margin-bottom: 80px;
+  margin-bottom: 25px;
 }
 
 /* .biocard-heading {
@@ -455,12 +456,52 @@ hr {
   margin: 0px auto 6px auto;
 } */
 
-.careercard-heading {
+.careercard-heading-1 {
+  font-size: 1.6em;
+  /* font-weight: 800; */
+  font-family: Comic Neue;
+  margin: 0px 0px 4px 0px;
+}
+
+
+.careercard-heading-2 {
   font-size: 1.1em;
   font-family: Fira Mono;
   font-weight: 800;
+  line-height: 1.2em;
+}
+
+.careercard-heading-3 {
+  font-size: 1em;
+  font-family: Fira Mono;
+  font-weight: 800;
+  line-height: 1.3em;
+  color: #928f99;
   /* text-decoration: underline; */
 }
+
+/* Skill.jsx */
+.skill {
+  display: inline-block;
+  background-color: #33355d;
+  color: #ff7000;
+  padding: 6px 8px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  margin: 10px;
+  font-family: Fira Mono;
+}
+
+.skill:hover {
+  background-color: #4d4e72;
+}
+
+.skills-hr {
+  border: 1px solid #928f99;
+  width: 80%;
+  margin: 0px auto 3px auto;
+}
+
 
 /* ContactPage.jsx */
 .contactPage {
@@ -501,7 +542,10 @@ hr {
   /* align-items: center; */
   /* text-align: center; */
   margin: auto;
+  /* margin-left: 30%; */
   width: 50%;
+  max-width: 700px;
+  /* margin: 0px auto; */
 }
 
 .recentUpdates-items {
@@ -527,4 +571,14 @@ hr {
   list-style-position: inside;
   list-style-type: none;
   font-size: 0.95em;
+}
+
+
+/* DEV FONTS */
+.comicNeue {
+  font-family: Comic Neue;
+}
+
+.firaMono {
+  font-family: Fira Mono;
 }

@@ -1,7 +1,47 @@
+import Skill from "./Skill";
+
 const CareerCard = () => {
+  //TODO: Offload these variables into a backend
+  const languages = [
+    "Java",
+    "C",
+    "C++",
+    "Python",
+    "Dart",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "C#",
+    "x86",
+    "MIPS",
+    "VHDL",
+    "Verilog",
+  ];
+
+  const toolsTech = [
+    "Git",
+    "TensorFlow",
+    "PyTorch",
+    "Flutter",
+    "AWS",
+    "OpenGL",
+    "Firebase",
+    "Azure",
+    "FPGAs",
+    "Unity",
+    "Docker",
+  ];
+
+  const interests = [
+    "Mixed Reality",
+    "Machine Learning",
+    "Cloud Architecture",
+    "GPGPU",
+  ];
+
   return (
     <div className="careercard">
-      <h1 className="careercard-heading">Career Summary</h1>
+      <h1 className="careercard-heading-2">Career Summary</h1>
       <hr />
 
       <div className="careercard-section-spacing">
@@ -30,9 +70,28 @@ const CareerCard = () => {
       </div>
       <div>{/* INSERT 3D GLASSES HERE */}</div>
       <div>
-        <h1 className="careercard-heading">Fun Facts</h1>
-        <hr />
-        <p>If you really want to learn about me, the bes</p>
+        <h1 className="careercard-heading-1">Skills</h1>
+        {/* <hr /> */}
+
+        <ul>
+          <h3 className="careercard-heading-3">Languages</h3>
+          <hr className="skills-hr"/>
+          {languages.map((language) => (
+            <Skill text={language} />
+          ))}
+
+          <h3 className="careercard-heading-3">Tools and Technologies</h3>
+          <hr className="skills-hr"/>
+          {toolsTech.map((tool) => (
+            <Skill text={tool} />
+          ))}
+
+          <h3 className="careercard-heading-3">Interests</h3>
+          <hr className="skills-hr"/>
+          {interests.map((interest) => (
+            <Skill text={interest} />
+          ))}
+        </ul>
       </div>
     </div>
   );
