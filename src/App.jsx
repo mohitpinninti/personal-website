@@ -19,7 +19,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        {/* NOTE: if readding this page, also re-add to Navbar */}
+        {/* <Route path="/contact" element={<ContactPage />} /> */}
         <Route path="/career" element={<CareerPage />} />
         <Route path="/testing" element={<Testing />} />
       </Routes>

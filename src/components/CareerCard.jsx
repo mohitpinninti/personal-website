@@ -1,6 +1,7 @@
 import Skill from "./Skill";
 import ProgressBar from "./ProgressBar";
 import Job from "./Job";
+import Project from "./Project";
 
 const CareerCard = () => {
   //TODO: Offload these variables into a backend
@@ -77,6 +78,48 @@ const CareerCard = () => {
         " Created and presented demonstrations of key aspects of head-worn displays including weight, focal length, and social acceptability at the International Symposium of Wearable Computing.",
       ],
     },
+    {
+      title: "Teaching Assistant",
+      company: "Georgia Institute of Technology",
+      team: "ECE 2031 - Digital Design Lab",
+      startDate: "Jan 2022",
+      endDate: "Present",
+      descItems: [
+        "Assisted 30+ students in problem-solving using rapid prototyping of digital circuits using VHDL, FPGAs, breadboard prototyping, and writing assembly.",
+        "Graded student work through digital check-offs of lab work and in-class practical exercises.",
+      ],
+    },
+  ];
+
+  const projects = [
+    // {
+    //   title: "SociaLite",
+    //   description: "A fully functional social media app with authentication, profiles, location tracking, and live feeds",
+    //   projectLinkURL:"https://github.com/mohitpinninti/SociaLite",
+    //   imageURL: "\\assets\\socialite.png",
+    //   tools: ["Flutter", "Dart", "Firebase"],
+    // },
+    {
+      title: "Mbed Fruit Ninja",
+      description: "A fruit ninja spin-off in C++ from scratch using an Mbed microcontroller, uLCD display, buttons and accelerometer controls.",
+      projectLinkURL:"https://github.com/mohitpinninti/SociaLite",
+      imageURL: "\\assets\\mbed_fruit_ninja.jpg",
+      tools: ["C++", "Mbed"],
+    },
+    {
+      title: "Space Shooter",
+      description: "An endless space combat shooter with abilities and powerups where the player gains points for destroying asteroids.",
+      projectLinkURL:"https://codepen.io/pinnintimohit/pen/mLVQrz",
+      imageURL: "\\assets\\space_shooter.png",
+      tools: ["HTML", "CSS", "JS", "Processing.js"],
+    },
+    {
+      title: "SociaLite",
+      description: "A fully functional social media app with authentication, profiles, location tracking, and live feeds.",
+      projectLinkURL:"https://github.com/mohitpinninti/SociaLite",
+      imageURL: "\\assets\\socialite.png",
+      tools: ["Flutter", "Dart", "Firebase"],
+    },
   ];
 
   return (
@@ -151,6 +194,9 @@ const CareerCard = () => {
       <div>
         <h1 className="careercard-heading-2">Projects</h1>
         <hr />
+        {projects.map((project) => (
+          <Project project={project} />
+        ))}
       </div>
     </div>
   );
