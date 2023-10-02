@@ -1,4 +1,6 @@
 import Skill from "./Skill";
+import ProgressBar from "./ProgressBar";
+import Job from "./Job";
 
 const CareerCard = () => {
   //TODO: Offload these variables into a backend
@@ -39,21 +41,59 @@ const CareerCard = () => {
     "GPGPU",
   ];
 
+  const jobs = [
+    {
+      title: "Software Engineering Intern",
+      company: "Qualcomm",
+      team: "AR/VR Graphics Arch",
+      startDate: "May 2023",
+      endDate: "Aug 2023",
+      descItems: [
+        "Improved visual quality of a mobile rendering pipeline by incorporating a super-resolution algorithm into a VR simulation tool using C++ and OpenGL.",
+        "Improved framerate by 350% on a customer’s laser-beam scanning display by designing a GPU simulation to remap an image to take advantage of cache optimizations using OpenGL and C++.",
+      ],
+    },
+    {
+      title: "Software Engineering Intern",
+      company: "ADM",
+      team: "Digital Lab",
+      startDate: "May 2022",
+      endDate: "May 2023",
+      descItems: [
+        "Created an MVP for crop classification at up to 85% accuracy using deep learning to estimate crop yields",
+        "Analyzed time-series satellite images to detect deforestation at scale using anomaly detection algorithms.",
+        "Created Flask API supporting image retrieval, crop prediction, and storage in Azure Blob Storage and Cosmos DB.",
+        "Presented comprehensive crop yield estimation proposal to VPs, highlighting how advancements in accurate crop pricing increase profit margins for Agricultural Services & Oilseeds business unit.",
+      ],
+    },
+    {
+      title: "Research Assistant",
+      company: "Georgia Institute of Technology",
+      team: "Contextual Computing Group - Dr. Thad Starner",
+      startDate: "Aug 2022",
+      endDate: "Present",
+      descItems: [
+        "Developing software applications to allow text captioning on smart glasses to be used for communication by a deaf film crew on the set of an upcoming movie.",
+        " Created and presented demonstrations of key aspects of head-worn displays including weight, focal length, and social acceptability at the International Symposium of Wearable Computing.",
+      ],
+    },
+  ];
+
   return (
     <div className="careercard">
-      <h1 className="careercard-heading-2">Career Summary</h1>
-      <hr />
-
       <div className="careercard-section-spacing">
+        <h1 className="careercard-heading-2">Career Summary</h1>
+        <hr />
         <p>
-          Hi there! I'm Mohit! I'm a 4<sup>th</sup> year Computer Engineering
-          student at Georgia Tech. On paper, my concentrations are Distributed
-          Systems &amp; Software Design and Cybersecurity &#40;you have to
-          conform somehow right? {/*&#128531;*/}&#41; but my deepest interests
-          lie at the intersection of Mixed Reality and Machine Learning. My goal
-          is to create augmented reality glasses that can intelligently
-          integrate information into our daily lives, without taking away focus
-          from the physical world.
+          {/* Hi there! I'm Mohit!  */}
+          Let's get down to business! I'm a 4<sup>th</sup> year Computer
+          Engineering student at Georgia Tech. On paper, my concentrations are
+          Distributed Systems &amp; Software Design and Cybersecurity &#40;you
+          have to conform somehow right? {/*&#128531;*/}&#41; but my deepest
+          interests lie at the intersection of Mixed Reality and Machine
+          Learning. My goal is to create augmented reality glasses that can
+          intelligently integrate information into our daily lives, without
+          taking away focus from the physical world.
         </p>
         <br />
         <p>
@@ -69,29 +109,48 @@ const CareerCard = () => {
         </p>
       </div>
       <div>{/* INSERT 3D GLASSES HERE */}</div>
-      <div>
-        <h1 className="careercard-heading-1">Skills</h1>
-        {/* <hr /> */}
+      {/* Test 1 */}
+      <div className="careercard-section-spacing">
+        <h1 className="careercard-heading-2">Skills</h1>
+        <hr />
 
         <ul>
           <h3 className="careercard-heading-3">Languages</h3>
-          <hr className="skills-hr"/>
           {languages.map((language) => (
-            <Skill text={language} />
+            <Skill key={language} text={language} />
           ))}
 
           <h3 className="careercard-heading-3">Tools and Technologies</h3>
-          <hr className="skills-hr"/>
           {toolsTech.map((tool) => (
-            <Skill text={tool} />
+            <Skill key={tool} text={tool} />
           ))}
 
           <h3 className="careercard-heading-3">Interests</h3>
-          <hr className="skills-hr"/>
           {interests.map((interest) => (
-            <Skill text={interest} />
+            <Skill key={interest} text={interest} />
           ))}
         </ul>
+      </div>
+
+      {/* Dashboard section work in progress */}
+      {/* <div style={{marginTop: "35px"}}>
+        <h1 className="careercard-heading-1">Dashboard</h1>
+        <hr />
+        <ProgressBar />
+      </div>       */}
+
+      <div className="careercard-section-spacing">
+        <h1 className="careercard-heading-2">Jobs</h1>
+        <hr />
+        {jobs.map((job) => (
+          <>
+            <Job key={job.company + "_" + job.startDate} job={job} />
+          </>
+        ))}
+      </div>
+      <div>
+        <h1 className="careercard-heading-2">Projects</h1>
+        <hr />
       </div>
     </div>
   );
