@@ -120,19 +120,20 @@ const CareerPage = () => {
       <div className="careerpage-section-spacing">
         <h1 className="careerpage-heading-2">Career Summary</h1>
         <hr />
-        <p>
+        <p style={{lineHeight: "1.3em"}}>
+        {/* <p> */}
           {/* Hi there! I'm Mohit!  */}
           Let's get down to business! I'm a 4<sup>th</sup> year Computer
           Engineering student at Georgia Tech. On paper, my concentrations are
           Distributed Systems &amp; Software Design and Cybersecurity &#40;you
-          have to conform somehow right? {/*&#128531;*/}&#41; but my deepest
+          have to compromise somehow right? 😮‍💨{/*&#128531;*/}&#41; but my deepest
           interests lie at the intersection of Mixed Reality and Machine
           Learning. My goal is to create augmented reality glasses that can
           intelligently integrate information into our daily lives, without
           taking away focus from the physical world.
         </p>
         <br />
-        <p>
+        <p style={{lineHeight: "1.3em"}}>
           Until then though, I plan to gain as much knowledge about ML and XR as
           possible. Most recently, I've worked at Qualcomm as a Software
           Engineer Intern in the Graphics Research department, specifically on
