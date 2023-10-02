@@ -8,7 +8,7 @@ import ContactPage from "./pages/ContactPage";
 import Testing from "./pages/Testing";
 import WipAlert from "./components/WipAlert";
 import Footer from "./components/Footer";
-import CareerPage from "./CareerPage";
+import CareerPage from "./pages/CareerPage";
 
 function App() {
   return (

@@ -3,7 +3,7 @@ const Job = (props) => {
   //   jobs
   return (
     <div className="job">
-      <h1 className="careercard-heading-3">
+      <h1 className="careerpage-heading-3">
         {props.job.title} &middot; {props.job.company}
       </h1>
       <h2 className="job-intro">
@@ -11,7 +11,7 @@ const Job = (props) => {
       </h2>
       <ul className="job-desc">
         {props.job.descItems.map((item) => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </div>

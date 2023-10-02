@@ -426,25 +426,12 @@ hr {
 /* CareerPage.jsx */
 .careerPage {
   text-align: center;
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-
-/* CareerCard.jsx */
-.careercard {
   max-width: 600px;
   margin: auto;
   font-family: Comic Neue;
-  /* font-family: Fira Mono; */
-  /* margin: 0px; */
-  /* text-align: center; */
-  /* text-align: center; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
-.careercard-section-spacing {
+.careerpage-section-spacing {
   margin-bottom: 35px;
   margin-top: 35px;
 }
@@ -457,7 +444,7 @@ hr {
   margin: 0px auto 6px auto;
 } */
 
-.careercard-heading-1 {
+.careerpage-heading-1 {
   font-size: 1.6em;
   /* font-weight: 800; */
   font-family: Comic Neue;
@@ -465,14 +452,14 @@ hr {
 }
 
 
-.careercard-heading-2 {
+.careerpage-heading-2 {
   font-size: 1.2em;
   font-family: Fira Mono;
   font-weight: 800;
   /* line-height: 1.2em; */
 }
 
-.careercard-heading-3 {
+.careerpage-heading-3 {
   font-size: 1em;
   font-family: Fira Mono;
   font-weight: 800;
@@ -482,7 +469,7 @@ hr {
   padding-top: 8px;
 }
 
-.careercard-heading-4 {
+.careerpage-heading-4 {
   font-size: 0.7em;
   /* font-family: Fira Mono; */
   font-family: Comic Neue;
@@ -548,7 +535,7 @@ hr {
     flex-wrap: wrap;
   }
 
-  .careercard {
+  .careerpage {
     padding: 0px 10px;
   }
 }
@@ -557,7 +544,7 @@ hr {
   display: flex;
   align-items: center;
   /* padding: 10px; */
-  /* margin:20px; */
+  margin: 10px;
 }
 
 .project-text-section {
@@ -573,6 +560,8 @@ hr {
 
 .project-img {
   max-height: 120px;
+  border-radius: 6px;
+  /* border: #6c0359 2px solid; */
 }
 
 /* ContactPage.jsx */

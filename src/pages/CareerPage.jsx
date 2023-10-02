@@ -1,9 +1,9 @@
-import Skill from "./Skill";
-import ProgressBar from "./ProgressBar";
-import Job from "./Job";
-import Project from "./Project";
+import Skill from "../components/Skill";
+import ProgressBar from "../components/ProgressBar";
+import Job from "../components/Job";
+import Project from "../components/Project";
 
-const CareerCard = () => {
+const CareerPage = () => {
   //TODO: Offload these variables into a backend
   const languages = [
     "Java",
@@ -92,43 +92,33 @@ const CareerCard = () => {
   ];
 
   const projects = [
-    // {
-    //   title: "SociaLite",
-    //   description: "A fully functional social media app with authentication, profiles, location tracking, and live feeds",
-    //   projectLinkURL:"https://github.com/mohitpinninti/SociaLite",
-    //   imageURL: "\\assets\\socialite.png",
-    //   tools: ["Flutter", "Dart", "Firebase"],
-    // },
     {
       title: "Mbed Fruit Ninja",
-      description:
-        "A fruit ninja spin-off in C++ from scratch using an Mbed microcontroller, uLCD display, buttons and accelerometer controls.",
-      projectLinkURL: "https://github.com/mohitpinninti/SociaLite",
+      description: "A fruit ninja spin-off in C++ from scratch using an Mbed microcontroller, uLCD display, buttons and accelerometer controls.",
+      projectLinkURL:"https://github.com/mohitpinninti/SociaLite",
       imageURL: "\\assets\\mbed_fruit_ninja.jpg",
       tools: ["C++", "Mbed"],
     },
     {
       title: "Space Shooter",
-      description:
-        "An endless space combat shooter with abilities and powerups where the player gains points for destroying asteroids.",
-      projectLinkURL: "https://codepen.io/pinnintimohit/pen/mLVQrz",
+      description: "An endless space combat shooter with abilities and powerups where the player gains points for destroying asteroids.",
+      projectLinkURL:"https://codepen.io/pinnintimohit/pen/mLVQrz",
       imageURL: "\\assets\\space_shooter.png",
       tools: ["HTML", "CSS", "JS", "Processing.js"],
     },
     {
       title: "SociaLite",
-      description:
-        "A fully functional social media app with authentication, profiles, location tracking, and live feeds.",
-      projectLinkURL: "https://github.com/mohitpinninti/SociaLite",
+      description: "A fully functional social media app with authentication, profiles, location tracking, and live feeds.",
+      projectLinkURL:"https://github.com/mohitpinninti/SociaLite",
       imageURL: "\\assets\\socialite.png",
       tools: ["Flutter", "Dart", "Firebase"],
     },
   ];
 
   return (
-    <div className="careercard">
-      <div className="careercard-section-spacing">
-        <h1 className="careercard-heading-2">Career Summary</h1>
+    <div className="careerPage">
+      <div className="careerpage-section-spacing">
+        <h1 className="careerpage-heading-2">Career Summary</h1>
         <hr />
         <p>
           {/* Hi there! I'm Mohit!  */}
@@ -156,44 +146,44 @@ const CareerCard = () => {
       </div>
       <div>{/* INSERT 3D GLASSES HERE */}</div>
       {/* Test 1 */}
-      <div className="careercard-section-spacing">
-        <h1 className="careercard-heading-2">Skills</h1>
+      <div className="careerpage-section-spacing">
+        <h1 className="careerpage-heading-2">Skills</h1>
         <hr />
 
         <ul>
-          <h3 className="careercard-heading-3">Languages</h3>
+          <h3 className="careerpage-heading-3">Languages</h3>
           {languages.map((language) => (
-            <Skill text={language} />
+            <Skill key={language} text={language} />
           ))}
 
-          <h3 className="careercard-heading-3">Tools and Technologies</h3>
+          <h3 className="careerpage-heading-3">Tools and Technologies</h3>
           {toolsTech.map((tool) => (
-            <Skill text={tool} />
+            <Skill key={tool} text={tool} />
           ))}
 
-          <h3 className="careercard-heading-3">Interests</h3>
+          <h3 className="careerpage-heading-3">Interests</h3>
           {interests.map((interest) => (
-            <Skill text={interest} />
+            <Skill key={interest} text={interest} />
           ))}
         </ul>
       </div>
 
       {/* Dashboard section work in progress */}
       {/* <div style={{marginTop: "35px"}}>
-        <h1 className="careercard-heading-1">Dashboard</h1>
+        <h1 className="careerpage-heading-1">Dashboard</h1>
         <hr />
         <ProgressBar />
       </div>       */}
 
-      <div className="careercard-section-spacing">
-        <h1 className="careercard-heading-2">Experience</h1>
+      <div className="careerpage-section-spacing">
+        <h1 className="careerpage-heading-2">Experience</h1>
         <hr />
         {jobs.map((job) => (
-          <Job job={job} />
+            <Job key={job.company + "_" + job.startDate} job={job} />
         ))}
       </div>
       <div>
-        <h1 className="careercard-heading-2">Projects</h1>
+        <h1 className="careerpage-heading-2">Projects</h1>
         <hr />
         {projects.map((project) => (
           <Project project={project} />
@@ -203,4 +193,4 @@ const CareerCard = () => {
   );
 };
 
-export default CareerCard;
+export default CareerPage;

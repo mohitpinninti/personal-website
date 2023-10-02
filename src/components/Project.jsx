@@ -8,7 +8,7 @@ const Project = (props) => {
         <img className="project-img" src={props.project.imageURL}></img>
       </div>
       <div className="project-text-section">
-        <h1 className="careercard-heading-3">{props.project.title}</h1>
+        <h1 className="careerpage-heading-3">{props.project.title}</h1>
         <p>{props.project.description}</p>
         {props.project.tools.map((tool) => (
           <Skill key={tool} text={tool} />
