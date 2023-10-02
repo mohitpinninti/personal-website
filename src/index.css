@@ -542,11 +542,22 @@ hr {
   margin-left: 7%;
 }
 
+@media screen and (max-width: 600px) {
 
+  .project-holder {
+    flex-wrap: wrap;
+  }
+
+  .careercard {
+    padding: 0px 10px;
+  }
+}
 
 .project-holder {
   display: flex;
   align-items: center;
+  /* padding: 10px; */
+  /* margin:20px; */
 }
 
 .project-text-section {

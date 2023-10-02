@@ -183,7 +183,7 @@ const CareerCard = () => {
       </div>       */}
 
       <div className="careercard-section-spacing">
-        <h1 className="careercard-heading-2">Jobs</h1>
+        <h1 className="careercard-heading-2">Experience</h1>
         <hr />
         {jobs.map((job) => (
           <>
