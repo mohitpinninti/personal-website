@@ -9,6 +9,7 @@ import Testing from "./pages/Testing";
 import WipAlert from "./components/WipAlert";
 import Footer from "./components/Footer";
 import CareerPage from "./pages/CareerPage";
+import ResumePage from "./pages/ResumePage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         {/* <Route path="/contact" element={<ContactPage />} /> */}
         <Route path="/career" element={<CareerPage />} />
         <Route path="/testing" element={<Testing />} />
+        <Route path="/resume" element={<ResumePage />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
