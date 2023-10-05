@@ -13,7 +13,7 @@ import ResumePage from "./pages/ResumePage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <WipAlert />
       <NavBar />
       <Routes>
@@ -27,7 +27,7 @@ function App() {
         <Route path="/resume" element={<ResumePage />}/>
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
