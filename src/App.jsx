@@ -1,19 +1,19 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
-import Testing from "./pages/Testing";
 import WipAlert from "./components/WipAlert";
 import Footer from "./components/Footer";
 import CareerPage from "./pages/CareerPage";
 import ResumePage from "./pages/ResumePage";
+import Testing from "./components/Testing";
 
 function App() {
   return (
-    <>
+    <HashRouter>
       <WipAlert />
       <NavBar />
       <Routes>
@@ -27,7 +27,7 @@ function App() {
         <Route path="/resume" element={<ResumePage />}/>
       </Routes>
       <Footer />
-    </>
+    </HashRouter>
   );
 }
 

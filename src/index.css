@@ -424,7 +424,7 @@ hr {
 }
 
 /* CareerPage.jsx */
-.careerPage {
+.careerpage {
   text-align: center;
   max-width: 600px;
   margin: auto;
@@ -676,4 +676,83 @@ color:#c9b7fe;
 text-align: left;
 padding-left: 15px;
 } */
+/* 
+.testingcard > .name {
+  margin: 15px 0px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  line-height: 1.2em;
+  z-index: 1;
+}
 
+.testingcard-text {
+  color: #FFF;
+  font-family: Fira Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 1;
+} */
+/* 
+.testingcard {
+  padding: 50px 50px 0px 50px;
+  width: 800px;
+  height: 480px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 2px solid #6E6684;
+  background: #1B0E41;
+  margin: 50px auto 25px;
+  
+  background-image: url("\\assets\\ReadyPlayerMe-Avatar_right_facing.png");
+  background-position-x: 240%;
+  background-position-y: 30%;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  position: relative
+} */
+/* 
+.testingcard > ul > li {
+  color: #FFF;
+  font-family: Fira Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 2em;
+  display: inline-block;
+  z-index: 1;
+}
+
+.testingcard-spaced {
+  margin: 25px 0px 15px 0px;
+}
+
+.avatar-holder {
+  width: 200px;
+  height: 200px;
+} */
+
+.testingcard {
+  /* padding: 50px 0px 0px 50px; */
+  /* padding: 50px 50px 0px 50px; */
+  width: 800px;
+  height: 480px;
+  /* flex-shrink: 0; */
+  border-radius: 15px;
+  border: 2px solid #6E6684;
+  background: #1B0E41;
+  margin: 50px auto 25px;
+  
+  /* background-image: url("\\assets\\ReadyPlayerMe-Avatar_right_facing.png"); */
+  /* background-position-x: 240%; */
+  /* background-position-y: 30%; */
+  /* background-size: 85%; */
+  /* background-repeat: no-repeat; */
+  /* position: relative */
+}

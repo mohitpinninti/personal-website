@@ -116,7 +116,7 @@ const CareerPage = () => {
   ];
 
   return (
-    <div className="careerPage">
+    <div className="careerpage">
       <div className="careerpage-section-spacing">
         <h1 className="careerpage-heading-2">Career Summary</h1>
         <hr />
