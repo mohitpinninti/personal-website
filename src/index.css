@@ -697,27 +697,9 @@ padding-left: 15px;
   font-weight: 400;
   line-height: normal;
   z-index: 1;
-} */
-/* 
-.testingcard {
-  padding: 50px 50px 0px 50px;
-  width: 800px;
-  height: 480px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  border: 2px solid #6E6684;
-  background: #1B0E41;
-  margin: 50px auto 25px;
-  
-  background-image: url("\\assets\\ReadyPlayerMe-Avatar_right_facing.png");
-  background-position-x: 240%;
-  background-position-y: 30%;
-  background-size: 85%;
-  background-repeat: no-repeat;
-  position: relative
-} */
-/* 
-.testingcard > ul > li {
+}
+
+.testingcard-textholder > ul > li {
   color: #FFF;
   font-family: Fira Mono;
   font-size: 20px;
@@ -736,23 +718,69 @@ padding-left: 15px;
 .avatar-holder {
   width: 200px;
   height: 200px;
+}
+
+testingcard-textholder {
+
 } */
 
 .testingcard {
-  /* padding: 50px 0px 0px 50px; */
-  /* padding: 50px 50px 0px 50px; */
   width: 800px;
   height: 480px;
-  /* flex-shrink: 0; */
   border-radius: 15px;
   border: 2px solid #6E6684;
   background: #1B0E41;
   margin: 50px auto 25px;
-  
-  /* background-image: url("\\assets\\ReadyPlayerMe-Avatar_right_facing.png"); */
-  /* background-position-x: 240%; */
-  /* background-position-y: 30%; */
-  /* background-size: 85%; */
-  /* background-repeat: no-repeat; */
-  /* position: relative */
+  position: relative;
+}
+
+.testingcard-textholder-text {
+  color: #FFF;
+  font-family: Fira Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.testingcard-textholder-spaced {
+  margin: 25px 0px 15px 0px; 
+}
+
+.testingcard-textholder > ul > li {
+  color: #FFF;
+  font-family: Fira Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 2em;
+  display: inline-block;
+  z-index: 2;
+}
+
+.testingcard-textholder > .name {
+  margin: 15px 0px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  line-height: 1.2em;
+}
+
+.testingcard-textholder {
+  padding: 50px 50px 0px 50px;
+  z-index: 2;
+}
+
+.testingcard-avatarholder {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  right: 0;
+  width: 400px;
+  height: inherit;
+  z-index: 0;
 }
