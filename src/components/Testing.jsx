@@ -16,17 +16,21 @@ const Testing = () => {
   return (
     <>
       <div className="testingcard">
-        <div className="testingcard-textholder"> {/*this isn't being used yet */}
+        
+
+        <div className="testingcard-textholder">
           <p className="testingcard-textholder-text">Hello, my name is</p>
           <div className="name">
             <p>Mohit</p>
             <p>Pinninti</p>
           </div>
-          <p className="testingcard-textholder-text testingcard-textholder-spaced">I'm a...</p>
+          <p className="testingcard-textholder-text testingcard-textholder-spaced">
+            I'm a...
+          </p>
           <ul>
-          <li>Software Engineer Intern @ Qualcomm</li>
-          <li>Computer Engineering Student @ Georgia Tech</li>
-          <li>Research Assistant @ Contextual Computing Group</li>
+            <li>Software Engineer Intern @ Qualcomm</li>
+            <li>Computer Engineering Student @ Georgia Tech</li>
+            <li>Research Assistant @ Contextual Computing Group</li>
           </ul>
         </div>
 
@@ -35,21 +39,11 @@ const Testing = () => {
         </div>
       </div>
 
-      {/* <div className="testingcard-container">
-        <div className="testingcard-textholder">
-        <p className="testingcard-text">Hello, my name is</p>
-        <div className="name">
-          <p>Mohit</p>
-          <p>Pinninti</p>
-        </div>
+      {/* <div className="testingcard">
+      <div className="testingcard-avatarholder">
+      <AvatarCanvas />
+      </div>
 
-        <p className="testingcard-text testingcard-spaced">I'm a...</p>
-        <ul>
-          <li>Software Engineer Intern @ Qualcomm</li>
-          <li>Computer Engineering Student @ Georgia Tech</li>
-          <li>Research Assistant @ Contextual Computing Group</li>
-        </ul>
-        </div>
       </div> */}
       
     </>
@@ -58,13 +52,14 @@ const Testing = () => {
 
 export default Testing;
 
-
-{/* <div className="testingcard">
+{
+  /* <div className="testingcard">
           <AvatarCanvas/>
-      </div> */}
+      </div> */
+}
 
-
-      {/* <div className="testingcard">
+{
+  /* <div className="testingcard">
         <p className="testing-text">Hello, my name is</p>
         <div className="name">
           <p>Mohit</p>
@@ -80,4 +75,5 @@ export default Testing;
         <div style={style}>
           <AvatarCanvas />
         </div>
-      </div> */}
+      </div> */
+}

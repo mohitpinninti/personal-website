@@ -663,19 +663,6 @@ hr {
   font-family: Fira Mono;
 }
 
-/* .testing-skills-box {
-  border: 2px solid white;
-  border-radius: 50px;
-  padding: 20px;
-} */
-
-/* .asdf {
-font-size: 100px;
-opacity: 80%;
-color:#c9b7fe;
-text-align: left;
-padding-left: 15px;
-} */
 /* 
 .testingcard > .name {
   margin: 15px 0px;
@@ -718,11 +705,9 @@ padding-left: 15px;
 .avatar-holder {
   width: 200px;
   height: 200px;
-}
+}*/
 
-testingcard-textholder {
 
-} */
 
 .testingcard {
   width: 800px;
@@ -732,6 +717,8 @@ testingcard-textholder {
   background: #1B0E41;
   margin: 50px auto 25px;
   position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .testingcard-textholder-text {
@@ -756,7 +743,7 @@ testingcard-textholder {
   line-height: normal;
   line-height: 2em;
   display: inline-block;
-  z-index: 2;
+  /* z-index: 1; */
 }
 
 .testingcard-textholder > .name {
@@ -772,15 +759,34 @@ testingcard-textholder {
 
 .testingcard-textholder {
   padding: 50px 50px 0px 50px;
-  z-index: 2;
+  /* z-index: 16777272; */
+  /* z-index: 2; */
 }
 
 .testingcard-avatarholder {
   position: absolute;
   top: 0;
-  /* left: 0; */
-  right: 0;
-  width: 400px;
+  left: 300px;
+  width: 600px;
+  height: inherit;
+  z-index: -1;
+}
+
+
+/* .testingcard {
+  width: 800px;
+  height: 480px;
+  border-radius: 15px;
+  border: 2px solid #6E6684;
+  background: #1B0E41;
+  margin: 50px auto 25px;
+  position: relative;
+}
+
+.testingcard-avatarholder {
+  top: 0;
+  left: 0;
+  width: 1200px;
   height: inherit;
   z-index: 0;
-}
+} */

@@ -177,17 +177,37 @@ function AvatarGroup() {
   );
 }
 
+// const AvatarHtml = () => {
+//   return (
+//     <Html>
+//       <div className="testingcard-textholder">
+//           <p className="testingcard-textholder-text">Hello, my name is</p>
+//           <div className="name">
+//             <p>Mohit</p>
+//             <p>Pinninti</p>
+//           </div>
+//           <p className="testingcard-textholder-text testingcard-textholder-spaced">
+//             I'm a...
+//           </p>
+//           <ul>
+//             <li>Software Engineer Intern @ Qualcomm</li>
+//             <li>Computer Engineering Student @ Georgia Tech</li>
+//             <li>Research Assistant @ Contextual Computing Group</li>
+//           </ul>
+//         </div>
+//     </Html>
+//   );
+// }
+
 const AvatarCanvas = () => {
   return (
-    <Canvas>
+    <Canvas style={{zIndex: 0}}>
       {/* <AvatarGroup /> */}
 
       {/* <OrbitControls target={[0.5, 0.2, 0]}/> */}
       {/* <OrbitControls target0={[0.5, 0.2, 0]} /> */}
       <AvatarGroup />
-      {/* <Html>
-      
-      </Html> */}
+      {/* <AvatarHtml /> */}
     </Canvas>
   );
 };
