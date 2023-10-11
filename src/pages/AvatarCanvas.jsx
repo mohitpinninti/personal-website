@@ -4,10 +4,12 @@ import {
   useAnimations,
   useGLTF,
   PerspectiveCamera,
-  Float,
+  // Float,
+  useProgress,
 } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, Suspense } from "react";
+import LoadingModal from "../components/LoadingModal";
 
 const PlainAvatar = () => {
   const avatar = useGLTF("\\models\\AnimatedAvatar.glb");
@@ -23,11 +25,10 @@ const PlainAvatar = () => {
 
   const Animations = {
     Greeting: "greeting",
-    Idle: "idle"
+    Idle: "idle",
   };
 
   const [animationState, setAnimationState] = new useState(Animations.Greeting);
-
 
   // useEffect(() => {
 
@@ -155,10 +156,15 @@ function CameraRig() {
   );
 }
 
+function Loader() {
+  const { progress } = useProgress();
+  return <Html center>{progress}%</Html>;
+}
+
 function AvatarGroup() {
   return (
     // <group position={[0.5, 0.2, 0]}>
-    <group position={[0, 0.3 , 0]}>
+    <group position={[0, 0.3, 0]}>
       {/* <group> */}
       {/* <OrbitControls target={[0.5, 0.2, 0]} /> */}
       <OrbitControls />
@@ -196,49 +202,23 @@ function AvatarGroup() {
         penumbra={0}
         decay={1}
       />
-      {/* <PerspectiveCamera makeDefault position={[0, 0, 3]} zoom={1.5}>
-        <directionalLight intensity={0.5} position={[2, 0, 0]} />
-        <directionalLight intensity={0.5} position={[-2, 0, 0]} />
-      </PerspectiveCamera> */}
       <CameraRig />
       <pointLight position={[2, 0.5, 1]} castShadow intensity={1} />
       <spotLight castShadow intensity={50} position={[0, 1, 5]} />
-      <PlainAvatar />
+
+      <Suspense fallback={<LoadingModal />}>
+        <PlainAvatar />
+      </Suspense>
     </group>
   );
 }
 
-// const AvatarHtml = () => {
-//   return (
-//     <Html>
-//       <div className="testingcard-textholder">
-//           <p className="testingcard-textholder-text">Hello, my name is</p>
-//           <div className="name">
-//             <p>Mohit</p>
-//             <p>Pinninti</p>
-//           </div>
-//           <p className="testingcard-textholder-text testingcard-textholder-spaced">
-//             I'm a...
-//           </p>
-//           <ul>
-//             <li>Software Engineer Intern @ Qualcomm</li>
-//             <li>Computer Engineering Student @ Georgia Tech</li>
-//             <li>Research Assistant @ Contextual Computing Group</li>
-//           </ul>
-//         </div>
-//     </Html>
-//   );
-// }
-
 const AvatarCanvas = () => {
   return (
-    <Canvas style={{zIndex: 0}}>
-      {/* <AvatarGroup /> */}
-
+    <Canvas>
       {/* <OrbitControls target={[0.5, 0.2, 0]}/> */}
       {/* <OrbitControls target0={[0.5, 0.2, 0]} /> */}
       <AvatarGroup />
-      {/* <AvatarHtml /> */}
     </Canvas>
   );
 };

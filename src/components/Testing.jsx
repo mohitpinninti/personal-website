@@ -1,7 +1,6 @@
 import AvatarCanvas from "../pages/AvatarCanvas";
 
 const Testing = () => {
-  // return (<AvatarCanvas />);
 
   const style = {
     width: "800px",
