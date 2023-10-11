@@ -51,29 +51,3 @@ const Testing = () => {
 };
 
 export default Testing;
-
-{
-  /* <div className="testingcard">
-          <AvatarCanvas/>
-      </div> */
-}
-
-{
-  /* <div className="testingcard">
-        <p className="testing-text">Hello, my name is</p>
-        <div className="name">
-          <p>Mohit</p>
-          <p>Pinninti</p>
-        </div>
-
-        <p className="testing-text testing-spaced">I'm a...</p>
-        <ul>
-          <li>Software Engineer Intern @ Qualcomm</li>
-          <li>Computer Engineering Student @ Georgia Tech</li>
-          <li>Research Assistant @ Contextual Computing Group</li>
-        </ul>
-        <div style={style}>
-          <AvatarCanvas />
-        </div>
-      </div> */
-}

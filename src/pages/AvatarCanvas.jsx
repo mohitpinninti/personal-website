@@ -21,6 +21,37 @@ const PlainAvatar = () => {
     actions.neutralIdle.play();
   }, []);
 
+  const Animations = {
+    Greeting: "greeting",
+    Idle: "idle"
+  };
+
+  const [animationState, setAnimationState] = new useState(Animations.Greeting);
+
+
+  // useEffect(() => {
+
+  //   if (animationState === Animations.Greeting) {
+  //     actions.standingGreeting.play();
+  //     setTimeout(setAnimationState(Animations.Idle), 1);
+  //   } else {
+  //     actions.neutralIdle.play();
+  //   }
+  // })
+
+  // useEffect(() => {
+  //   async function switchAnimation() {
+  //     actions.standingGreeting.play();
+  //     await new Promise(
+  //       resolve => setTimeout(resolve, 5000)
+  //     );
+
+  //     actions.neutralIdle.play();
+  //   }
+
+  //   switchAnimation();
+  // }, []);
+
   return (
     <group>
       <primitive
