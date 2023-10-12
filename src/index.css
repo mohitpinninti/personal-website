@@ -257,8 +257,67 @@ nav > h1 {
 
 
 /* HomeIntroCard.jsx */
-.introcard > .name {
-  /* padding: 0px; */
+.introcard {
+  width: 800px;
+  height: 480px;
+  border-radius: 15px;
+  border: 2px solid #6E6684;
+  background: #1B0E41;
+  margin: 50px auto 25px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.introcard-textholder-text {
+  color: #FFF;
+  font-family: Fira Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.introcard-textholder-spaced {
+  margin: 25px 0px 15px 0px; 
+}
+
+.introcard-textholder > ul > li {
+  color: #FFF;
+  font-family: Fira Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 2em;
+  display: inline-block;
+}
+
+.introcard-textholder > .name {
+  margin: 15px 0px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  line-height: 1.2em;
+}
+
+.introcard-textholder {
+  padding: 50px 50px 0px 50px;
+}
+
+.introcard-avatarholder {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  width: 600px;
+  height: inherit;
+  z-index: -1;
+}
+
+/* .introcard > .name {
   margin: 15px 0px;
   color: #FFF;
   font-family: Roboto;
@@ -279,7 +338,6 @@ nav > h1 {
 }
 
 .introcard {
-  /* padding: 50px; */
   padding: 50px 50px 0px 50px;
   width: 800px;
   height: 480px;
@@ -309,7 +367,7 @@ nav > h1 {
 
 .introcard-spaced {
   margin: 25px 0px 15px 0px;
-}
+} */
 
 /* AboutPage.jsx */
 .aboutPage {
@@ -726,87 +784,3 @@ hr {
   width: 200px;
   height: 200px;
 }*/
-
-
-
-.testingcard {
-  width: 800px;
-  height: 480px;
-  border-radius: 15px;
-  border: 2px solid #6E6684;
-  background: #1B0E41;
-  margin: 50px auto 25px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.testingcard-textholder-text {
-  color: #FFF;
-  font-family: Fira Mono;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.testingcard-textholder-spaced {
-  margin: 25px 0px 15px 0px; 
-}
-
-.testingcard-textholder > ul > li {
-  color: #FFF;
-  font-family: Fira Mono;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  line-height: 2em;
-  display: inline-block;
-  /* z-index: 1; */
-}
-
-.testingcard-textholder > .name {
-  margin: 15px 0px;
-  color: #FFF;
-  font-family: Roboto;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  line-height: 1.2em;
-}
-
-.testingcard-textholder {
-  padding: 50px 50px 0px 50px;
-  /* z-index: 16777272; */
-  /* z-index: 2; */
-}
-
-.testingcard-avatarholder {
-  position: absolute;
-  top: 0;
-  left: 300px;
-  width: 600px;
-  height: inherit;
-  z-index: -1;
-}
-
-
-/* .testingcard {
-  width: 800px;
-  height: 480px;
-  border-radius: 15px;
-  border: 2px solid #6E6684;
-  background: #1B0E41;
-  margin: 50px auto 25px;
-  position: relative;
-}
-
-.testingcard-avatarholder {
-  top: 0;
-  left: 0;
-  width: 1200px;
-  height: inherit;
-  z-index: 0;
-} */

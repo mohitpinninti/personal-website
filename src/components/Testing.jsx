@@ -2,16 +2,6 @@ import AvatarCanvas from "../pages/AvatarCanvas";
 
 const Testing = () => {
 
-  const style = {
-    width: "800px",
-    height: "480px",
-    display: "block",
-    position: "absolute",
-    top: "0px",
-    // left: "400px",
-    zIndex: "0",
-  };
-
   return (
     <>
       <div className="testingcard">

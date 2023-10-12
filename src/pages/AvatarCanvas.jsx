@@ -5,7 +5,6 @@ import {
   useGLTF,
   PerspectiveCamera,
   // Float,
-  useProgress,
 } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useRef, useState, Suspense } from "react";
@@ -154,11 +153,6 @@ function CameraRig() {
       />
     </PerspectiveCamera>
   );
-}
-
-function Loader() {
-  const { progress } = useProgress();
-  return <Html center>{progress}%</Html>;
 }
 
 function AvatarGroup() {
