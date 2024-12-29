@@ -1,7 +1,7 @@
 export async function handler(request, response) {
     try {
-      const databaseId = process.env.NOTION_DATABASE_ID;
-      const token = process.env.NOTION_API_TOKEN;
+      const databaseId = process.env.VITE_NOTION_DATABASE_ID;
+      const token = process.env.VITE_NOTION_API_TOKEN;
   
       const res = await fetch(`https://api.notion.com/v1/databases/${databaseId}/query`, {
         method: 'POST',
