@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import CareerPage from "./pages/CareerPage";
 import ResumePage from "./pages/ResumePage";
 import Testing from "./components/Testing";
+import QuoteWallPage from "./pages/QuotesPage";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
         {/* <Route path="/contact" element={<ContactPage />} /> */}
         <Route path="/career" element={<CareerPage />} />
         <Route path="/testing" element={<Testing />} />
-        <Route path="/resume" element={<ResumePage />}/>
+        <Route path="/resume" element={<ResumePage />} />
+        <Route path="/quotewall" element={<QuoteWallPage />} />
       </Routes>
       <Footer />
     </HashRouter>
