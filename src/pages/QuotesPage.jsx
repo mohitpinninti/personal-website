@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Quote from "../components/Quote";
 
 const QuoteWallPage = () => {
     const [data, setData] = useState([]);
@@ -49,7 +50,15 @@ const QuoteWallPage = () => {
         );
     }
 
-    return <div>{JSON.stringify(data)}</div>;
+    return <div>{
+        // JSON.stringify(data)
+        data.results.map((dbEntry) => {
+            // const author = dbEntry.properties.Author.rich_text.text.content;
+            const author = dbEntry.properties.Author.rich_text.length != 0 ? dbEntry.properties.Author.rich_text[0].text.content : null;
+            // console.log(u);
+            return <Quote author={author} quote={author} />
+        })
+    }</div>;
 };
 
 export default QuoteWallPage;
