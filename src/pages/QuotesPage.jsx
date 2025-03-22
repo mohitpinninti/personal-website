@@ -20,6 +20,8 @@ const QuoteWallPage = () => {
                         database_id: quotesDb,
                     }),
                 });
+                // Create this page with API response contents to use for testing
+                // const response = await fetch("/src/pages/notionquotes.json");
 
                 if (!response.ok) {
                     throw new Error("Invalid network response");
@@ -50,13 +52,17 @@ const QuoteWallPage = () => {
         );
     }
 
+    // Can be used to print API Response
+    // console.log(JSON.stringify(data));
+
     return <div>{
-        // JSON.stringify(data)
         data.results.map((dbEntry) => {
-            // const author = dbEntry.properties.Author.rich_text.text.content;
+            const displayStatus = dbEntry.properties["Display Status"].select != null ? dbEntry.properties["Display Status"].select.name : null;
+            if (displayStatus !== "Website") return null;
+
             const author = dbEntry.properties.Author.rich_text.length != 0 ? dbEntry.properties.Author.rich_text[0].text.content : null;
-            // console.log(u);
-            return <Quote author={author} quote={author} />
+            const quote = dbEntry.properties.Quote.rich_text.length != 0 ? dbEntry.properties.Quote.rich_text[0].text.content : null;
+            return <Quote author={author} quote={quote} key={quote} />
         })
     }</div>;
 };

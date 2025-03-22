@@ -800,3 +800,33 @@ hr {
   width: 200px;
   height: 200px;
 }*/
+
+/* Quote.jsx */
+.quote {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* max-width: 800px; */
+  margin-inline: max(30px, 50% - 800px / 2); /* Keeps left/right margins auto unless viewport is smaller than 800px in which case sets as 20px*/
+  text-align: center;
+  /* background: linear-gradient(to right, #0a0c50, #090b49); */
+  background: linear-gradient(to right, #f3f3f3, #e7e7e7);
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quote > h1 {
+  font-size: 1.8rem;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.quote > h2 {
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+  color: #777;
+  font-style: italic;
+}
