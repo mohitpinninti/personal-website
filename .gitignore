@@ -25,3 +25,11 @@ dist-ssr
 
 .vercel
 .env*.local
+.env
+
+# Firebase service account key (sensitive - never commit)
+serviceAccountKey.json
+**/serviceAccountKey*.json
+
+# Temp directory for seed/unseed workflow
+temp/

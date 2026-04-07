@@ -1,187 +1,170 @@
 {
   "jobs": [
     {
-      "id": "qualcomm-2023",
-      "title": "Software Engineering Intern",
-      "company": "Qualcomm",
-      "team": "AR/VR Graphics Arch",
-      "startDate": "May 2023",
-      "endDate": "Aug 2023",
+      "id": "acme-corp-2024",
+      "title": "Software Engineer",
+      "company": "Acme Corp",
+      "team": "Platform Engineering",
+      "startDate": "Jun 2024",
+      "endDate": "Present",
       "descItems": [
-        "Improved visual quality of a mobile rendering pipeline by incorporating a super-resolution algorithm into a VR simulation tool using C++ and OpenGL.",
-        "Improved framerate by 350% on a customer's laser-beam scanning display by designing a GPU simulation to remap an image to take advantage of cache optimizations using OpenGL and C++."
+        "Designed and implemented a microservices architecture serving 10K+ daily active users.",
+        "Reduced API response times by 40% through query optimization and caching strategies."
       ],
       "order": 1
     },
     {
-      "id": "adm-2022",
+      "id": "globex-2023",
       "title": "Software Engineering Intern",
-      "company": "ADM",
-      "team": "Digital Lab",
-      "startDate": "May 2022",
-      "endDate": "May 2023",
+      "company": "Globex Industries",
+      "team": "Data Infrastructure",
+      "startDate": "May 2023",
+      "endDate": "Aug 2023",
       "descItems": [
-        "Created an MVP for crop classification at up to 85% accuracy using deep learning to estimate crop yields",
-        "Analyzed time-series satellite images to detect deforestation at scale using anomaly detection algorithms.",
-        "Created Flask API supporting image retrieval, crop prediction, and storage in Azure Blob Storage and Cosmos DB.",
-        "Presented comprehensive crop yield estimation proposal to VPs, highlighting how advancements in accurate crop pricing increase profit margins for Agricultural Services & Oilseeds business unit."
+        "Built an ETL pipeline processing 500K+ records daily using Python and Apache Spark.",
+        "Developed internal dashboards for real-time monitoring of pipeline health and data quality.",
+        "Collaborated with cross-functional teams to define data contracts and schema standards."
       ],
       "order": 2
     },
     {
-      "id": "gatech-research-2022",
+      "id": "university-ra-2022",
       "title": "Research Assistant",
-      "company": "Georgia Institute of Technology",
-      "team": "Contextual Computing Group - Dr. Thad Starner",
+      "company": "State University",
+      "team": "Applied Computing Lab",
       "startDate": "Aug 2022",
-      "endDate": "Present",
+      "endDate": "May 2023",
       "descItems": [
-        "Developing software applications to allow text captioning on smart glasses to be used for communication by a deaf film crew on the set of an upcoming movie.",
-        "Created and presented demonstrations of key aspects of head-worn displays including weight, focal length, and social acceptability at the International Symposium of Wearable Computing."
+        "Developed simulation tools for modeling distributed systems under varying network conditions.",
+        "Co-authored a paper on fault-tolerant consensus algorithms presented at a regional conference."
       ],
       "order": 3
     },
     {
-      "id": "gatech-ta-2022",
+      "id": "university-ta-2022",
       "title": "Teaching Assistant",
-      "company": "Georgia Institute of Technology",
-      "team": "ECE 2031 - Digital Design Lab",
+      "company": "State University",
+      "team": "CS 201 - Data Structures",
       "startDate": "Jan 2022",
-      "endDate": "Present",
+      "endDate": "Dec 2022",
       "descItems": [
-        "Assisted 30+ students in problem-solving using rapid prototyping of digital circuits using VHDL, FPGAs, breadboard prototyping, and writing assembly.",
-        "Graded student work through digital check-offs of lab work and in-class practical exercises."
+        "Led weekly lab sessions for 40+ students covering trees, graphs, and sorting algorithms.",
+        "Designed and graded programming assignments and exam questions."
       ],
       "order": 4
     }
   ],
   "skills": [
-    { "id": "lang-java", "category": "languages", "name": "Java", "order": 1 },
-    { "id": "lang-c", "category": "languages", "name": "C", "order": 2 },
-    { "id": "lang-cpp", "category": "languages", "name": "C++", "order": 3 },
-    { "id": "lang-python", "category": "languages", "name": "Python", "order": 4 },
-    { "id": "lang-dart", "category": "languages", "name": "Dart", "order": 5 },
-    { "id": "lang-js", "category": "languages", "name": "JavaScript", "order": 6 },
+    { "id": "lang-python", "category": "languages", "name": "Python", "order": 1 },
+    { "id": "lang-js", "category": "languages", "name": "JavaScript", "order": 2 },
+    { "id": "lang-ts", "category": "languages", "name": "TypeScript", "order": 3 },
+    { "id": "lang-java", "category": "languages", "name": "Java", "order": 4 },
+    { "id": "lang-go", "category": "languages", "name": "Go", "order": 5 },
+    { "id": "lang-sql", "category": "languages", "name": "SQL", "order": 6 },
     { "id": "lang-html", "category": "languages", "name": "HTML", "order": 7 },
     { "id": "lang-css", "category": "languages", "name": "CSS", "order": 8 },
-    { "id": "lang-csharp", "category": "languages", "name": "C#", "order": 9 },
-    { "id": "lang-x86", "category": "languages", "name": "x86", "order": 10 },
-    { "id": "lang-mips", "category": "languages", "name": "MIPS", "order": 11 },
-    { "id": "lang-vhdl", "category": "languages", "name": "VHDL", "order": 12 },
-    { "id": "lang-verilog", "category": "languages", "name": "Verilog", "order": 13 },
-    { "id": "tool-git", "category": "tools", "name": "Git", "order": 14 },
-    { "id": "tool-tensorflow", "category": "tools", "name": "TensorFlow", "order": 15 },
-    { "id": "tool-pytorch", "category": "tools", "name": "PyTorch", "order": 16 },
-    { "id": "tool-flutter", "category": "tools", "name": "Flutter", "order": 17 },
-    { "id": "tool-aws", "category": "tools", "name": "AWS", "order": 18 },
-    { "id": "tool-opengl", "category": "tools", "name": "OpenGL", "order": 19 },
-    { "id": "tool-firebase", "category": "tools", "name": "Firebase", "order": 20 },
-    { "id": "tool-azure", "category": "tools", "name": "Azure", "order": 21 },
-    { "id": "tool-fpgas", "category": "tools", "name": "FPGAs", "order": 22 },
-    { "id": "tool-unity", "category": "tools", "name": "Unity", "order": 23 },
-    { "id": "tool-docker", "category": "tools", "name": "Docker", "order": 24 },
-    { "id": "int-mr", "category": "interests", "name": "Mixed Reality", "order": 25 },
-    { "id": "int-ml", "category": "interests", "name": "Machine Learning", "order": 26 },
-    { "id": "int-cloud", "category": "interests", "name": "Cloud Architecture", "order": 27 },
-    { "id": "int-gpgpu", "category": "interests", "name": "GPGPU", "order": 28 }
+    { "id": "tool-react", "category": "tools", "name": "React", "order": 9 },
+    { "id": "tool-node", "category": "tools", "name": "Node.js", "order": 10 },
+    { "id": "tool-docker", "category": "tools", "name": "Docker", "order": 11 },
+    { "id": "tool-git", "category": "tools", "name": "Git", "order": 12 },
+    { "id": "tool-aws", "category": "tools", "name": "AWS", "order": 13 },
+    { "id": "tool-firebase", "category": "tools", "name": "Firebase", "order": 14 },
+    { "id": "tool-postgres", "category": "tools", "name": "PostgreSQL", "order": 15 },
+    { "id": "tool-kubernetes", "category": "tools", "name": "Kubernetes", "order": 16 },
+    { "id": "int-distributed", "category": "interests", "name": "Distributed Systems", "order": 17 },
+    { "id": "int-ml", "category": "interests", "name": "Machine Learning", "order": 18 },
+    { "id": "int-oss", "category": "interests", "name": "Open Source", "order": 19 },
+    { "id": "int-devtools", "category": "interests", "name": "Developer Tools", "order": 20 }
   ],
   "projects": [
     {
-      "id": "mbed-fruit-ninja",
-      "title": "Mbed Fruit Ninja",
-      "description": "A fruit ninja spin-off in C++ from scratch using an Mbed microcontroller, uLCD display, buttons and accelerometer controls.",
-      "projectLinkURL": "https://github.com/mohitpinninti/SociaLite",
-      "imageURL": "\\assets\\mbed_fruit_ninja.jpg",
-      "tools": ["C++", "Mbed"],
+      "id": "task-tracker",
+      "title": "Task Tracker",
+      "description": "A full-stack task management app with real-time collaboration, drag-and-drop boards, and team workspaces.",
+      "projectLinkURL": "https://github.com/example/task-tracker",
+      "imageURL": "",
+      "tools": ["React", "Node.js", "PostgreSQL", "Socket.io"],
       "order": 1
     },
     {
-      "id": "space-shooter",
-      "title": "Space Shooter",
-      "description": "An endless space combat shooter with abilities and powerups where the player gains points for destroying asteroids.",
-      "projectLinkURL": "https://codepen.io/pinnintimohit/pen/mLVQrz",
-      "imageURL": "\\assets\\space_shooter.png",
-      "tools": ["HTML", "CSS", "JS", "Processing.js"],
+      "id": "weather-cli",
+      "title": "Weather CLI",
+      "description": "A command-line tool that fetches weather forecasts with colorful terminal output and location auto-detection.",
+      "projectLinkURL": "https://github.com/example/weather-cli",
+      "imageURL": "",
+      "tools": ["Go", "REST APIs"],
       "order": 2
     },
     {
-      "id": "socialite",
-      "title": "SociaLite",
-      "description": "A fully functional social media app with authentication, profiles, location tracking, and live feeds.",
-      "projectLinkURL": "https://github.com/mohitpinninti/SociaLite",
-      "imageURL": "\\assets\\socialite.png",
-      "tools": ["Flutter", "Dart", "Firebase"],
+      "id": "markdown-blog",
+      "title": "Markdown Blog Engine",
+      "description": "A static blog generator that converts Markdown files into a styled, searchable blog with RSS support.",
+      "projectLinkURL": "https://github.com/example/markdown-blog",
+      "imageURL": "",
+      "tools": ["Python", "Jinja2", "HTML", "CSS"],
       "order": 3
     }
   ],
   "recentUpdates": [
     {
-      "id": "aug-2023",
-      "date": "Aug 2023",
+      "id": "mar-2025",
+      "date": "Mar 2025",
       "items": [
-        { "event": "Concluded SWE Internship @ Qualcomm", "desc": "", "imageURL": "" },
-        { "event": "Started as Peer Leader for ECE 1100", "desc": "", "imageURL": "" }
+        { "event": "Promoted to Software Engineer II @ Acme Corp", "desc": "", "imageURL": "" },
+        { "event": "Spoke at LocalDevConf on microservices patterns", "desc": "", "imageURL": "" }
       ],
       "order": 1
     },
     {
-      "id": "may-2023",
-      "date": "May 2023",
+      "id": "jan-2025",
+      "date": "Jan 2025",
       "items": [
-        { "event": "Started SWE Internship @ Qualcomm", "desc": "", "imageURL": "" }
+        { "event": "Published open-source CLI tool — 500+ GitHub stars", "desc": "", "imageURL": "" }
       ],
       "order": 2
     },
     {
-      "id": "jan-2023",
-      "date": "Jan 2023",
+      "id": "jun-2024",
+      "date": "Jun 2024",
       "items": [
-        { "event": "MIT Reality Hack", "desc": "", "imageURL": "" }
+        { "event": "Started full-time role @ Acme Corp", "desc": "", "imageURL": "" }
       ],
       "order": 3
     },
     {
-      "id": "nov-2022",
-      "date": "Nov 2022",
+      "id": "may-2024",
+      "date": "May 2024",
       "items": [
-        { "event": "Headworn Display Exhibit at GVU Research Showcase (30th Anniversary)", "desc": "", "imageURL": "" }
+        { "event": "Graduated from State University — B.S. Computer Science", "desc": "", "imageURL": "" }
       ],
       "order": 4
     },
     {
-      "id": "sept-2022",
-      "date": "Sept 2022",
+      "id": "dec-2023",
+      "date": "Dec 2023",
       "items": [
-        { "event": "Headworn Display Exhibit at International Symposium of Wearable Computing", "desc": "", "imageURL": "" }
+        { "event": "Won Best Hack at University Hackathon", "desc": "", "imageURL": "" },
+        { "event": "Completed capstone project on distributed task scheduling", "desc": "", "imageURL": "" }
       ],
       "order": 5
-    },
-    {
-      "id": "aug-2022",
-      "date": "Aug 2022",
-      "items": [
-        { "event": "Started as Research Assistant @ Contextual Computing Group", "desc": "", "imageURL": "" },
-        { "event": "Co-Founded a Mixed Reality Club - GTXR", "desc": "", "imageURL": "" }
-      ],
-      "order": 6
     }
   ],
   "intro": {
     "id": "main",
     "greeting": "Hello, my name is",
-    "firstName": "Mohit",
-    "lastName": "Pinninti",
+    "firstName": "Jane",
+    "lastName": "Doe",
     "tagline": "I'm a...",
     "roles": [
-      "Software Engineer Intern @ Qualcomm",
-      "Computer Engineering Student @ Georgia Tech",
-      "Research Assistant @ Contextual Computing Group"
+      "Software Engineer @ Acme Corp",
+      "Open Source Contributor",
+      "CS Graduate — State University"
     ]
   },
   "socialLinks": [
-    { "id": "email", "platform": "email", "url": "mailto:pinnintimohit@gmail.com", "icon": "faEnvelope", "order": 1 },
-    { "id": "github", "platform": "github", "url": "https://github.com/mohitpinninti/", "icon": "faGithub", "order": 2 },
-    { "id": "instagram", "platform": "instagram", "url": "https://www.instagram.com/mohitpinninti/", "icon": "faInstagram", "order": 3 },
-    { "id": "linkedin", "platform": "linkedin", "url": "https://www.linkedin.com/in/mohit-pinninti/", "icon": "faLinkedin", "order": 4 }
+    { "id": "email", "platform": "email", "url": "mailto:jane.doe@example.com", "icon": "faEnvelope", "order": 1 },
+    { "id": "github", "platform": "github", "url": "https://github.com/janedoe", "icon": "faGithub", "order": 2 },
+    { "id": "instagram", "platform": "instagram", "url": "https://www.instagram.com/janedoe/", "icon": "faInstagram", "order": 3 },
+    { "id": "linkedin", "platform": "linkedin", "url": "https://www.linkedin.com/in/janedoe/", "icon": "faLinkedin", "order": 4 }
   ]
 }
