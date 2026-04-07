@@ -1,80 +1,25 @@
+import useFirestoreCollection from "../hooks/useFirestoreCollection";
+
 const RecentUpdatesCard = () => {
-  const list = [
-    {
-      date: "Aug 2023",
-      items: [
-        {
-          event: "Concluded SWE Internship @ Qualcomm",
-          desc: "",
-          imageURL: "",
-        },
-        {
-          event: "Started as Peer Leader for ECE 1100",
-          desc: "",
-          imageURL: "",
-        },
-      ],
-    },
-    {
-      date: "May 2023",
-      items: [
-        {
-          event: "Started SWE Internship @ Qualcomm",
-          desc: "",
-          imageURL: "",
-        },
-      ],
-    },
-    {
-      date: "Jan 2023",
-      items: [
-        {
-          event: "MIT Reality Hack",
-          desc: "",
-          imageURL: "",
-        },
-      ],
-    },
-    {
-      date: "Nov 2022",
-      items: [
-        {
-          event:
-            "Headworn Display Exhibit at GVU Research Showcase (30th Anniversary)",
-          desc: "",
-          imageURL: "",
-        },
-      ],
-    },
-    {
-      date: "Sept 2022",
-      items: [
-        {
-          event:
-            "Headworn Display Exhibit at International Symposium of Wearable Computing",
-          desc: "",
-          imageURL: "",
-        },
-      ],
-    },
-    {
-      date: "Aug 2022",
-      items: [
-        {
-          event:
-            "Started as Research Assistant @ Contextual Computing Group",
-          desc: "",
-          imageURL: "",
-        },
-        {
-          event:
-            "Co-Founded a Mixed Reality Club - GTXR",
-          desc: "",
-          imageURL: "",
-        },
-      ],
-    },
-  ];
+  const { data: list, loading, error } = useFirestoreCollection("recentUpdates", "order");
+
+  if (loading) {
+    return (
+      <div className="recentUpdates">
+        <h1>Recent Updates</h1>
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="recentUpdates">
+        <h1>Recent Updates</h1>
+        <p>Error loading updates. Check browser console for details.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="recentUpdates">
@@ -82,7 +27,7 @@ const RecentUpdatesCard = () => {
       <ul>
         {
             list.map((listItem) => (
-                <li key={listItem.date} className="recentUpdates-items">
+                <li key={listItem.id} className="recentUpdates-items">
                     <ul>
                         <li className="recentUpdates-items-date">{listItem.date}</li>
                         {

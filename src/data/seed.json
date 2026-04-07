@@ -1,0 +1,187 @@
+{
+  "jobs": [
+    {
+      "id": "qualcomm-2023",
+      "title": "Software Engineering Intern",
+      "company": "Qualcomm",
+      "team": "AR/VR Graphics Arch",
+      "startDate": "May 2023",
+      "endDate": "Aug 2023",
+      "descItems": [
+        "Improved visual quality of a mobile rendering pipeline by incorporating a super-resolution algorithm into a VR simulation tool using C++ and OpenGL.",
+        "Improved framerate by 350% on a customer's laser-beam scanning display by designing a GPU simulation to remap an image to take advantage of cache optimizations using OpenGL and C++."
+      ],
+      "order": 1
+    },
+    {
+      "id": "adm-2022",
+      "title": "Software Engineering Intern",
+      "company": "ADM",
+      "team": "Digital Lab",
+      "startDate": "May 2022",
+      "endDate": "May 2023",
+      "descItems": [
+        "Created an MVP for crop classification at up to 85% accuracy using deep learning to estimate crop yields",
+        "Analyzed time-series satellite images to detect deforestation at scale using anomaly detection algorithms.",
+        "Created Flask API supporting image retrieval, crop prediction, and storage in Azure Blob Storage and Cosmos DB.",
+        "Presented comprehensive crop yield estimation proposal to VPs, highlighting how advancements in accurate crop pricing increase profit margins for Agricultural Services & Oilseeds business unit."
+      ],
+      "order": 2
+    },
+    {
+      "id": "gatech-research-2022",
+      "title": "Research Assistant",
+      "company": "Georgia Institute of Technology",
+      "team": "Contextual Computing Group - Dr. Thad Starner",
+      "startDate": "Aug 2022",
+      "endDate": "Present",
+      "descItems": [
+        "Developing software applications to allow text captioning on smart glasses to be used for communication by a deaf film crew on the set of an upcoming movie.",
+        "Created and presented demonstrations of key aspects of head-worn displays including weight, focal length, and social acceptability at the International Symposium of Wearable Computing."
+      ],
+      "order": 3
+    },
+    {
+      "id": "gatech-ta-2022",
+      "title": "Teaching Assistant",
+      "company": "Georgia Institute of Technology",
+      "team": "ECE 2031 - Digital Design Lab",
+      "startDate": "Jan 2022",
+      "endDate": "Present",
+      "descItems": [
+        "Assisted 30+ students in problem-solving using rapid prototyping of digital circuits using VHDL, FPGAs, breadboard prototyping, and writing assembly.",
+        "Graded student work through digital check-offs of lab work and in-class practical exercises."
+      ],
+      "order": 4
+    }
+  ],
+  "skills": [
+    { "id": "lang-java", "category": "languages", "name": "Java", "order": 1 },
+    { "id": "lang-c", "category": "languages", "name": "C", "order": 2 },
+    { "id": "lang-cpp", "category": "languages", "name": "C++", "order": 3 },
+    { "id": "lang-python", "category": "languages", "name": "Python", "order": 4 },
+    { "id": "lang-dart", "category": "languages", "name": "Dart", "order": 5 },
+    { "id": "lang-js", "category": "languages", "name": "JavaScript", "order": 6 },
+    { "id": "lang-html", "category": "languages", "name": "HTML", "order": 7 },
+    { "id": "lang-css", "category": "languages", "name": "CSS", "order": 8 },
+    { "id": "lang-csharp", "category": "languages", "name": "C#", "order": 9 },
+    { "id": "lang-x86", "category": "languages", "name": "x86", "order": 10 },
+    { "id": "lang-mips", "category": "languages", "name": "MIPS", "order": 11 },
+    { "id": "lang-vhdl", "category": "languages", "name": "VHDL", "order": 12 },
+    { "id": "lang-verilog", "category": "languages", "name": "Verilog", "order": 13 },
+    { "id": "tool-git", "category": "tools", "name": "Git", "order": 14 },
+    { "id": "tool-tensorflow", "category": "tools", "name": "TensorFlow", "order": 15 },
+    { "id": "tool-pytorch", "category": "tools", "name": "PyTorch", "order": 16 },
+    { "id": "tool-flutter", "category": "tools", "name": "Flutter", "order": 17 },
+    { "id": "tool-aws", "category": "tools", "name": "AWS", "order": 18 },
+    { "id": "tool-opengl", "category": "tools", "name": "OpenGL", "order": 19 },
+    { "id": "tool-firebase", "category": "tools", "name": "Firebase", "order": 20 },
+    { "id": "tool-azure", "category": "tools", "name": "Azure", "order": 21 },
+    { "id": "tool-fpgas", "category": "tools", "name": "FPGAs", "order": 22 },
+    { "id": "tool-unity", "category": "tools", "name": "Unity", "order": 23 },
+    { "id": "tool-docker", "category": "tools", "name": "Docker", "order": 24 },
+    { "id": "int-mr", "category": "interests", "name": "Mixed Reality", "order": 25 },
+    { "id": "int-ml", "category": "interests", "name": "Machine Learning", "order": 26 },
+    { "id": "int-cloud", "category": "interests", "name": "Cloud Architecture", "order": 27 },
+    { "id": "int-gpgpu", "category": "interests", "name": "GPGPU", "order": 28 }
+  ],
+  "projects": [
+    {
+      "id": "mbed-fruit-ninja",
+      "title": "Mbed Fruit Ninja",
+      "description": "A fruit ninja spin-off in C++ from scratch using an Mbed microcontroller, uLCD display, buttons and accelerometer controls.",
+      "projectLinkURL": "https://github.com/mohitpinninti/SociaLite",
+      "imageURL": "\\assets\\mbed_fruit_ninja.jpg",
+      "tools": ["C++", "Mbed"],
+      "order": 1
+    },
+    {
+      "id": "space-shooter",
+      "title": "Space Shooter",
+      "description": "An endless space combat shooter with abilities and powerups where the player gains points for destroying asteroids.",
+      "projectLinkURL": "https://codepen.io/pinnintimohit/pen/mLVQrz",
+      "imageURL": "\\assets\\space_shooter.png",
+      "tools": ["HTML", "CSS", "JS", "Processing.js"],
+      "order": 2
+    },
+    {
+      "id": "socialite",
+      "title": "SociaLite",
+      "description": "A fully functional social media app with authentication, profiles, location tracking, and live feeds.",
+      "projectLinkURL": "https://github.com/mohitpinninti/SociaLite",
+      "imageURL": "\\assets\\socialite.png",
+      "tools": ["Flutter", "Dart", "Firebase"],
+      "order": 3
+    }
+  ],
+  "recentUpdates": [
+    {
+      "id": "aug-2023",
+      "date": "Aug 2023",
+      "items": [
+        { "event": "Concluded SWE Internship @ Qualcomm", "desc": "", "imageURL": "" },
+        { "event": "Started as Peer Leader for ECE 1100", "desc": "", "imageURL": "" }
+      ],
+      "order": 1
+    },
+    {
+      "id": "may-2023",
+      "date": "May 2023",
+      "items": [
+        { "event": "Started SWE Internship @ Qualcomm", "desc": "", "imageURL": "" }
+      ],
+      "order": 2
+    },
+    {
+      "id": "jan-2023",
+      "date": "Jan 2023",
+      "items": [
+        { "event": "MIT Reality Hack", "desc": "", "imageURL": "" }
+      ],
+      "order": 3
+    },
+    {
+      "id": "nov-2022",
+      "date": "Nov 2022",
+      "items": [
+        { "event": "Headworn Display Exhibit at GVU Research Showcase (30th Anniversary)", "desc": "", "imageURL": "" }
+      ],
+      "order": 4
+    },
+    {
+      "id": "sept-2022",
+      "date": "Sept 2022",
+      "items": [
+        { "event": "Headworn Display Exhibit at International Symposium of Wearable Computing", "desc": "", "imageURL": "" }
+      ],
+      "order": 5
+    },
+    {
+      "id": "aug-2022",
+      "date": "Aug 2022",
+      "items": [
+        { "event": "Started as Research Assistant @ Contextual Computing Group", "desc": "", "imageURL": "" },
+        { "event": "Co-Founded a Mixed Reality Club - GTXR", "desc": "", "imageURL": "" }
+      ],
+      "order": 6
+    }
+  ],
+  "intro": {
+    "id": "main",
+    "greeting": "Hello, my name is",
+    "firstName": "Mohit",
+    "lastName": "Pinninti",
+    "tagline": "I'm a...",
+    "roles": [
+      "Software Engineer Intern @ Qualcomm",
+      "Computer Engineering Student @ Georgia Tech",
+      "Research Assistant @ Contextual Computing Group"
+    ]
+  },
+  "socialLinks": [
+    { "id": "email", "platform": "email", "url": "mailto:pinnintimohit@gmail.com", "icon": "faEnvelope", "order": 1 },
+    { "id": "github", "platform": "github", "url": "https://github.com/mohitpinninti/", "icon": "faGithub", "order": 2 },
+    { "id": "instagram", "platform": "instagram", "url": "https://www.instagram.com/mohitpinninti/", "icon": "faInstagram", "order": 3 },
+    { "id": "linkedin", "platform": "linkedin", "url": "https://www.linkedin.com/in/mohit-pinninti/", "icon": "faLinkedin", "order": 4 }
+  ]
+}
