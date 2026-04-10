@@ -166,5 +166,12 @@
     { "id": "github", "platform": "github", "url": "https://github.com/janedoe", "icon": "faGithub", "order": 2 },
     { "id": "instagram", "platform": "instagram", "url": "https://www.instagram.com/janedoe/", "icon": "faInstagram", "order": 3 },
     { "id": "linkedin", "platform": "linkedin", "url": "https://www.linkedin.com/in/janedoe/", "icon": "faLinkedin", "order": 4 }
+  ],
+  "quotes": [
+    { "id": "quote-1", "author": "Linus Torvalds", "quote": "Talk is cheap. Show me the code.", "order": 1 },
+    { "id": "quote-2", "author": "Steve Jobs", "quote": "Stay hungry, stay foolish.", "order": 2 },
+    { "id": "quote-3", "author": "Grace Hopper", "quote": "The most dangerous phrase in the language is: We've always done it this way.", "order": 3 },
+    { "id": "quote-4", "author": "Alan Turing", "quote": "We can only see a short distance ahead, but we can see plenty there that needs to be done.", "order": 4 },
+    { "id": "quote-5", "author": "Edsger Dijkstra", "quote": "Simplicity is prerequisite for reliability.", "order": 5 }
   ]
 }

@@ -66,6 +66,9 @@ async function main() {
     await seedCollection("recentUpdates", seedData.recentUpdates);
     await seedDocument("intro", seedData.intro);
     await seedCollection("socialLinks", seedData.socialLinks);
+    if (seedData.quotes) {
+      await seedCollection("quotes", seedData.quotes);
+    }
 
     console.log("\n✓ Seeding complete!");
   } catch (error) {
