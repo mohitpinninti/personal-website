@@ -661,6 +661,37 @@ hr {
   max-width: 700px;
 }
 
+/* HomeActions.jsx */
+.home-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px auto;
+}
+
+.home-actions-button {
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: #6c0359;
+  color: white;
+  font-family: Comic Neue;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-actions-button:hover {
+  background-color: #ff8000;
+}
+
+.home-actions-button:active {
+  background-color: #ff7000;
+}
+
 .recentUpdates-items {
   list-style-type: none;
 }

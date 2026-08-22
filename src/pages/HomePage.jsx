@@ -1,11 +1,11 @@
 import HomeIntroCard from "../components/HomeIntroCard";
-import RecentUpdatesCard from "../components/RecentUpdatesCard";
+import HomeActions from "../components/HomeActions";
 
 const HomePage = () => {
   return (
     <>
       <HomeIntroCard />
-      <RecentUpdatesCard />
+      <HomeActions />
     </>
   );
 };

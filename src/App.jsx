@@ -2,6 +2,7 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import WipAlert from "./components/WipAlert";
 import Footer from "./components/Footer";
@@ -16,6 +17,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
         {/* NOTE: if readding this page, also re-add to Navbar */}
         {/* <Route path="/contact" element={<ContactPage />} /> */}
         <Route path="/testing" element={<Testing />} />
