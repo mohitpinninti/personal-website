@@ -66,6 +66,9 @@ async function main() {
     await seedCollection("recentUpdates", seedData.recentUpdates);
     await seedDocument("intro", seedData.intro);
     await seedCollection("socialLinks", seedData.socialLinks);
+    if (seedData.content) {
+      await seedCollection("content", seedData.content);
+    }
     if (seedData.quotes) {
       await seedCollection("quotes", seedData.quotes);
     }

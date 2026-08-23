@@ -13,11 +13,9 @@ A personal portfolio website built with React, Vite, and Firebase/Firestore.
 
 | Route | Page | Data Source |
 |-------|------|-------------|
-| `/` | Home — intro card + recent updates | Firestore |
-| `/about` | About (WIP) | — |
-| `/career` | Career — skills, experience, projects | Firestore |
-| `/blog` | Blog (WIP) | — |
-| `/resume` | Resume PDF embed | Static file |
+| `/` | Home — intro card + resume/about links | Firestore |
+| `/about` | About — bio | Firestore |
+| `/resume` | Resume PDF embed | Firestore (PDF path) + static file |
 | `/quotewall` | Quote Wall | Firestore (synced from Notion weekly) |
 
 ## Prerequisites
@@ -105,7 +103,7 @@ The site will be available at `http://localhost:5173`.
 
 ## Updating Content
 
-All portfolio content (jobs, skills, projects, recent updates, intro, social links) lives in Firestore. To update it:
+All portfolio content lives in Firestore — no user-facing text is stored in this repo. To update it:
 
 ### Download → Edit → Upload workflow
 
@@ -132,7 +130,11 @@ The `temp/` directory is gitignored — it's just a local workspace for editing 
 | `recentUpdates` | Home page | date, items[{event, desc, imageURL}], order |
 | `intro` | Home page | greeting, firstName, lastName, tagline, roles[] |
 | `socialLinks` | Footer | platform, url, icon, order |
+| `content` | Site-wide copy — one doc per area (`nav`, `home`, `about`, `resume`, `wipAlert`, `footer`, `contact`) | varies per doc, plus order |
 | `quotes` | Quote Wall | author, quote, order |
+
+Only loading/error fallback strings remain in code, since they render when a
+Firestore fetch itself fails.
 
 ## Quotes Sync (Notion → Firestore)
 

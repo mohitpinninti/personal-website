@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom';
+import useFirestoreDocument from '../hooks/useFirestoreDocument';
 import '../index.css'
 
 const NavBar = () => {
+  const { data: nav } = useFirestoreDocument("content", "nav");
+
   return (
     <nav>
-      <h1><Link to={"/"} className='navname'>Mohit Pinninti</Link></h1>
+      <h1><Link to={"/"} className='navname'>{nav?.brand}</Link></h1>
       <ul>
-        <li><Link to={"/"} className='navlink'>Home</Link></li>
-        <li><Link to={"/about"} className='navlink'>About</Link></li>
-        <li><Link to={"/resume"} className='navlink'>Resume</Link></li>
-        {/* <li><Link to={"/contact"} className='navlink'>Contact</Link></li> */}
+        {(nav?.links ?? []).map((link) => (
+          <li key={link.path}><Link to={link.path} className='navlink'>{link.label}</Link></li>
+        ))}
       </ul>
     </nav>
   );

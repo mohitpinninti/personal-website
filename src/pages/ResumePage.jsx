@@ -1,21 +1,31 @@
+import useFirestoreDocument from "../hooks/useFirestoreDocument";
+
 const ResumePage = () => {
+  const { data: resume, loading, error } = useFirestoreDocument("content", "resume");
+
+  if (loading) {
+    return <section className="resume-holder"><p>Loading...</p></section>;
+  }
+
+  if (error || !resume) {
+    console.error("[ResumePage] Failed to load resume content:", error);
+    return (
+      <section className="resume-holder">
+        <p>Error loading resume. Check browser console for details.</p>
+      </section>
+    );
+  }
 
   return (
     <section className="resume-holder">
-        {/* <div className="resume"></div> */}
-      {/* <iframe></iframe> */}
-      {/* <ReactPDF
-        file={{
-          url: "public/assets/M.Pinninti_09_04_2023 Resume.pdf",
-        }}
-      /> */}
-
-{/* <object width="800px" height="800px" data="public/assets/M.Pinninti_09_04_2023 Resume.pdf" type="application/pdf">   </object> */}
-<object className="resume" width="50%" height="100%" data="assets/M.Pinninti_09_04_2023 Resume.pdf" type="application/pdf" />
-{/* <embed></embed> */}
-{/* <iframe src="public/assets/M.Pinninti_09_04_2023 Resume.pdf" /> */}
-        {/* <iframe src="/assets/M.Pinninti_09_04_2023 Resume.pdf" /> */}
-        {/* <iframe className="resume" src="/assets/M.Pinninti_09_04_2023 Resume.pdf" height="500px" width="100%"></iframe> */}
+      <object
+        className="resume"
+        width="50%"
+        height="100%"
+        data={resume.fileUrl}
+        type="application/pdf"
+        aria-label={resume.label}
+      />
     </section>
   );
 };
