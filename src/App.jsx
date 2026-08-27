@@ -6,7 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import WipAlert from "./components/WipAlert";
 import Footer from "./components/Footer";
-import ResumePage from "./pages/ResumePage";
+import CareerPage from "./pages/CareerPage";
 import Testing from "./components/Testing";
 import QuoteWallPage from "./pages/QuotesPage";
 
@@ -21,7 +21,7 @@ function App() {
         {/* NOTE: if readding this page, also re-add to Navbar */}
         {/* <Route path="/contact" element={<ContactPage />} /> */}
         <Route path="/testing" element={<Testing />} />
-        <Route path="/resume" element={<ResumePage />} />
+        <Route path="/career" element={<CareerPage />} />
         <Route path="/quotewall" element={<QuoteWallPage />} />
       </Routes>
       <Footer />
