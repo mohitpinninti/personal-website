@@ -661,6 +661,20 @@ hr {
   max-width: 700px;
 }
 
+.home-intro-text {
+  width: calc(100% - 40px);
+  max-width: 700px;
+  margin: 30px auto;
+  font-family: Comic Neue, sans-serif;
+  font-size: 1.25em;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.home-intro-text > p + p {
+  margin-top: 1em;
+}
+
 /* HomeActions.jsx */
 .home-actions {
   display: flex;

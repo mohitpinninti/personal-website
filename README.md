@@ -13,7 +13,7 @@ A personal portfolio website built with React, Vite, and Firebase/Firestore.
 
 | Route | Page | Data Source |
 |-------|------|-------------|
-| `/` | Home — intro card + resume/about links | Firestore |
+| `/` | Home — intro card + intro text + resume/about links | Firestore |
 | `/about` | About — bio | Firestore |
 | `/career` | Career — resume section | Firestore (PDF path) + static file |
 | `/quotewall` | Quote Wall | Firestore (synced from Notion weekly) |
@@ -132,6 +132,8 @@ The `temp/` directory is gitignored — it's just a local workspace for editing 
 | `socialLinks` | Footer | platform, url, icon, order |
 | `content` | Site-wide copy — one doc per area (`nav`, `home`, `about`, `career`, `wipAlert`, `footer`, `contact`) | varies per doc, plus order |
 | `quotes` | Quote Wall | author, quote, order |
+
+The `content/home` doc holds `introParagraphs[]` (home intro text, hidden when empty) and `actions[{label, path}]`.
 
 Only loading/error fallback strings remain in code, since they render when a
 Firestore fetch itself fails.
