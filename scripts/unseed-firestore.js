@@ -64,6 +64,7 @@ async function main() {
       intro: await downloadDocument("intro", "main"),
       socialLinks: await downloadCollection("socialLinks"),
       content: await downloadCollection("content"),
+      phrases: await downloadCollection("phrases"),
       quotes: await downloadCollection("quotes"),
     };
 

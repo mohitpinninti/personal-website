@@ -1,4 +1,5 @@
 import useFirestoreDocument from "../hooks/useFirestoreDocument";
+import RichText from "./RichText";
 
 const HomeIntroText = () => {
   const { data: home, loading, error } = useFirestoreDocument("content", "home");
@@ -25,7 +26,7 @@ const HomeIntroText = () => {
   return (
     <div className="home-intro-text">
       {paragraphs.map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
+        <RichText key={index} as="p" text={paragraph} />
       ))}
     </div>
   );

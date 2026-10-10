@@ -74,6 +74,7 @@ button:focus-visible {
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&family=Noto+Sans+Telugu&display=swap');
 
 
 
@@ -665,7 +666,7 @@ hr {
   width: calc(100% - 40px);
   max-width: 700px;
   margin: 30px auto;
-  font-family: Comic Neue, sans-serif;
+  font-family: Comic Neue, 'Noto Sans Devanagari', 'Noto Sans Telugu', sans-serif;
   font-size: 1.25em;
   line-height: 1.6;
   overflow-wrap: anywhere;
@@ -673,6 +674,41 @@ hr {
 
 .home-intro-text > p + p {
   margin-top: 1em;
+}
+
+/* RotatingText.jsx */
+/* Variants share one grid cell so the cell is as wide as the widest variant and
+   surrounding prose never reflows mid-rotation. */
+.rotating-text {
+  display: inline-grid;
+  vertical-align: baseline;
+}
+
+.rotating-text-variant {
+  grid-area: 1 / 1;
+  justify-self: start;
+}
+
+/* Each character pulls into focus in turn, so the word resolves left to right
+   rather than the whole block sharpening at once. */
+.rotating-text-character {
+  display: inline-block;
+  white-space: pre;
+  opacity: 0;
+  filter: blur(12px);
+  transition: opacity 700ms ease, filter 700ms ease;
+}
+
+.rotating-text-variant.is-active .rotating-text-character {
+  opacity: 1;
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rotating-text-character {
+    transition: none;
+    filter: none;
+  }
 }
 
 /* HomeActions.jsx */

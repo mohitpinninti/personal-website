@@ -9,23 +9,26 @@ import Footer from "./components/Footer";
 import CareerPage from "./pages/CareerPage";
 import Testing from "./components/Testing";
 import QuoteWallPage from "./pages/QuotesPage";
+import PhrasesProvider from "./components/PhrasesProvider";
 
 function App() {
   return (
-    <HashRouter>
-      <WipAlert />
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        {/* NOTE: if readding this page, also re-add to Navbar */}
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
-        <Route path="/testing" element={<Testing />} />
-        <Route path="/career" element={<CareerPage />} />
-        <Route path="/quotewall" element={<QuoteWallPage />} />
-      </Routes>
-      <Footer />
-    </HashRouter>
+    <PhrasesProvider>
+      <HashRouter>
+        <WipAlert />
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          {/* NOTE: if readding this page, also re-add to Navbar */}
+          {/* <Route path="/contact" element={<ContactPage />} /> */}
+          <Route path="/testing" element={<Testing />} />
+          <Route path="/career" element={<CareerPage />} />
+          <Route path="/quotewall" element={<QuoteWallPage />} />
+        </Routes>
+        <Footer />
+      </HashRouter>
+    </PhrasesProvider>
   );
 }
 

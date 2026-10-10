@@ -131,9 +131,13 @@ The `temp/` directory is gitignored — it's just a local workspace for editing 
 | `intro` | Home page | greeting, firstName, lastName, tagline, roles[] |
 | `socialLinks` | Footer | platform, url, icon, order |
 | `content` | Site-wide copy — one doc per area (`nav`, `home`, `about`, `career`, `wipAlert`, `footer`, `contact`) | varies per doc, plus order |
+| `phrases` | Any text via `{{id}}` tokens | variants[{lang, language, text, romanized}], intervalMs, order |
 | `quotes` | Quote Wall | author, quote, order |
 
 The `content/home` doc holds `introParagraphs[]` (home intro text, hidden when empty) and `actions[{label, path}]`.
+
+Any content string can embed a `{{phraseId}}` token. It renders the matching `phrases` doc, cycling through its
+`variants` in place.
 
 Only loading/error fallback strings remain in code, since they render when a
 Firestore fetch itself fails.
