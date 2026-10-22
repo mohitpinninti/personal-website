@@ -14,7 +14,7 @@ A personal portfolio website built with React, Vite, and Firebase/Firestore.
 | Route | Page | Data Source |
 |-------|------|-------------|
 | `/` | Home — intro card + intro text + resume/about links | Firestore |
-| `/about` | About — bio | Firestore |
+| `/about` | About — short/expandable bio | Firestore |
 | `/career` | Career — resume section | Firestore (PDF path) + static file |
 | `/quotewall` | Quote Wall | Firestore (synced from Notion weekly) |
 
@@ -136,6 +136,13 @@ The `temp/` directory is gitignored — it's just a local workspace for editing 
 
 The `content/home` doc holds `introParagraphs[]` (home intro text, hidden when empty) and `actions[{label, path}]`.
 
+The `content/about` doc drives the About page. Each block is optional and is hidden when missing:
+
+- `heading`: page title
+- `bio`: `{heading, short[], full[], expandLabel, collapseLabel}`. Both lists are paragraphs. The `short`
+  version (1–2 paragraphs) shows first and turns into the `full` version (4–6 paragraphs) in place when the
+  expand button is clicked. Linking to `/about?bio=full` (e.g. from a home `actions` entry) opens the page with
+  the full bio showing and scrolled into view.
 Any content string can embed a `{{phraseId}}` token. It renders the matching `phrases` doc, cycling through its
 `variants` in place.
 

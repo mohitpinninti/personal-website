@@ -372,9 +372,97 @@ nav > h1 {
 
 /* AboutPage.jsx */
 .aboutPage {
+  width: calc(100% - 40px);
+  max-width: 900px;
+  margin: 0 auto 60px;
+  font-family: Comic Neue, 'Noto Sans Devanagari', 'Noto Sans Telugu', sans-serif;
+  line-height: 1.6;
+}
+
+.aboutPage-heading {
+  font-family: Fira Mono;
+  font-size: 1.6em;
   text-align: center;
-  /* align-items: center; */
-  /* justify-content: center; */
+  margin: 30px 0 10px;
+}
+
+.about-section {
+  margin: 50px 0;
+}
+
+.about-section-heading {
+  font-family: Fira Mono;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #adaab5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+/* AboutBio.jsx */
+.about-bio {
+  scroll-margin-top: 20px;
+}
+
+.about-bio-viewport {
+  overflow: hidden;
+  transition: height 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about-bio-text {
+  font-size: 1.15em;
+}
+
+.about-bio-text > p + p {
+  margin-top: 1em;
+}
+
+/* The mask is 2.5x the content's height with a soft opaque-to-clear edge, so sliding
+   it up sweeps that edge down over the content until the opaque part covers it all. */
+.about-bio-text.is-animated {
+  mask-image: linear-gradient(to bottom, #000 40%, transparent 60%);
+  mask-size: 100% 250%;
+  mask-repeat: no-repeat;
+  animation: about-bio-reveal 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes about-bio-reveal {
+  from {
+    mask-position: 0 100%;
+  }
+  to {
+    mask-position: 0 0;
+  }
+}
+
+.about-bio-toggle {
+  margin-top: 24px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: #6c0359;
+  color: white;
+  font-family: Comic Neue;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.about-bio-toggle:hover {
+  background-color: #ff8000;
+}
+
+.about-bio-toggle:active {
+  background-color: #ff7000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-bio-viewport,
+  .about-bio-text.is-animated {
+    transition: none;
+    animation: none;
+  }
 }
 
 /* BioCard.jsx */
